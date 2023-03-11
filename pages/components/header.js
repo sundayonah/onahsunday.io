@@ -1,4 +1,4 @@
-import Image from "next"
+import Image from "next/image";
 import Img1 from "../images/my-avatar.png";
 import Img2 from "../images/icon-design.svg";
 import Img3 from "../images/icon-dev.svg";
@@ -16,7 +16,7 @@ const header = () => {
         <aside className="sidebar" data-sidebar>
           <div className="sidebar-info">
             <figure className="avatar-box">
-              <img src="" alt="Onah Sunday" width={80} />
+              <Image src={Img1} alt="Onah Sunday" width={100} hieght={100} />
             </figure>
             <div className="info-content">
               <h1 className="name" title="Onah Sunday">
@@ -401,7 +401,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port2} alt="orizon" loading="lazy" />
+                        <Image src={port2} alt="orizon" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Orizon</h3>
                       <p className="project-category">Web development</p>
@@ -417,7 +417,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port3} alt="fundo" loading="lazy" />
+                        <Image src={port3} alt="fundo" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Fundo</h3>
                       <p className="project-category">Web design</p>
@@ -433,7 +433,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port4} alt="brawlhalla" loading="lazy" />
+                        <Image src={port4} alt="brawlhalla" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Brawlhalla</h3>
                       <p className="project-category">Applications</p>
@@ -449,7 +449,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port5} alt="dsm." loading="lazy" />
+                        <Image src={port5} alt="dsm." loading="lazy" />
                       </figure>
                       <h3 className="project-title">DSM.</h3>
                       <p className="project-category">Web design</p>
@@ -465,7 +465,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port1} alt="metaspark" loading="lazy" />
+                        <Image src={port1} alt="metaspark" loading="lazy" />
                       </figure>
                       <h3 className="project-title">MetaSpark</h3>
                       <p className="project-category">Web design</p>
@@ -481,7 +481,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port2} alt="summary" loading="lazy" />
+                        <Image src={port2} alt="summary" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Summary</h3>
                       <p className="project-category">Web development</p>
@@ -501,7 +501,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port3} alt="task manager" loading="lazy" />
+                        <Image src={port3} alt="task manager" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Movie APP</h3>
                       <p className="project-category">Web Developement</p>
@@ -521,7 +521,7 @@ const header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <img src={port4} alt="portfolio" loading="lazy" />
+                        <Image src={port4} alt="portfolio" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Blockchain Portfolio</h3>
                       <p className="project-category">Web development</p>
