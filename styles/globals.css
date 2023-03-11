@@ -357,9 +357,18 @@ main {
   gap: 15px;
 }
 
+.avatar-box Image {
+  width: 150px;
+}
+
 .avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: transparent;
+  /* border-radius: 20px; */
+}
+
+.avatar-box:hover {
+  transform: scale(1.09);
 }
 
 .info-content .name {
@@ -598,6 +607,19 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+}
+
+/* MYSKILLS */
+
+.myTechnology {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hr {
+  /* border: none; */
+  border: 1px solid var(--jet); /* Change the color to red */
+  margin: 20px 0;
 }
 
 /**
@@ -1979,10 +2001,6 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar-info {
     flex-direction: column;
-  }
-
-  .avatar-box img {
-    width: 150px;
   }
 
   .info-content .name {

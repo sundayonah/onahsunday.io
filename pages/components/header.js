@@ -20,7 +20,7 @@ const header = () => {
         <aside className="sidebar" data-sidebar>
           <div className="sidebar-info">
             <figure className="avatar-box">
-              <Image src={Img1} alt="Onah Sunday" width={100} hieght={100} />
+              <Image src={Img1} alt="Onah Sunday" width={85} hieght={85} />
             </figure>
             <div className="info-content">
               <h1 className="name" title="Onah Sunday">
