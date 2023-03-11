@@ -2,11 +2,15 @@ import Image from "next/image";
 import Img1 from "../images/my-avatar.png";
 import Img2 from "../images/icon-design.svg";
 import Img3 from "../images/icon-dev.svg";
+// portfolio
 import port1 from "../images/personal.png";
 import port2 from "../images/bida-countdown.png";
 import port3 from "../images/reactmovie.png";
 import port4 from "../images/otoport.png";
 import port5 from "../images/bida.png";
+
+//client
+import clt1 from "../images/bida-logo.png";
 const header = () => {
   //IMAGES
   return (
@@ -96,14 +100,10 @@ const header = () => {
                   <a href="#portfolio">Portfolio</a>
                 </button>
               </li>
+
               <li className="navbar-item">
                 <button className="navbar-link" data-nav-link>
-                  Blog
-                </button>
-              </li>
-              <li className="navbar-item">
-                <button className="navbar-link" data-nav-link>
-                  Contact
+                  <a href="#contact">Contact</a>
                 </button>
               </li>
               <li className="navbar-item">
@@ -145,7 +145,7 @@ const header = () => {
               <ul className="service-list">
                 <li className="service-item">
                   <div className="service-icon-box">
-                    <img src="" alt="design icon" width={40} />
+                    <Image src={Img2} alt="design icon" width={40} />
                   </div>
                   <div className="service-content-box">
                     <h4 className="h4 service-item-title">
@@ -159,7 +159,7 @@ const header = () => {
                 </li>
                 <li className="service-item">
                   <div className="service-icon-box">
-                    <img src="" alt="Web development icon" width={40} />
+                    <Image src={Img3} alt="Web development icon" width={40} />
                   </div>
                   <div className="service-content-box">
                     <h4 className="h4 service-item-title">Web3 Developer</h4>
@@ -181,13 +181,13 @@ const header = () => {
               <ul className="clients-list has-scrollbar">
                 <li className="clients-item">
                   <a href="#">
-                    <img src="" alt="client logo" />
+                    <Image src={Img1} alt="client logo" />
                   </a>
                 </li>
 
                 <li className="clients-item">
                   <a href="#">
-                    <img src="" alt="client logo" />
+                    <Image src={clt1} alt="client logo" />
                   </a>
                 </li>
 
@@ -528,6 +528,60 @@ const header = () => {
                     </a>
                   </li>
                 </ul>
+              </section>
+            </div>
+            <div className="top-space" id="contact">
+              <header>
+                <h2 className="h2 article-title">Contact</h2>
+              </header>
+              <section className="contact-form">
+                {/* <h3 className="h3 form-title">Contact Info</h3> */}
+                <div>
+                  <div className="separator" />
+                  <div className="separator" />
+                  <ul className="social-list">
+                    <li className="social-item">
+                      <a
+                        href="https://github.com/sundayonah"
+                        className="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ion-icon name="logo-github" />
+                      </a>
+                    </li>
+                    <li className="social-item">
+                      <a
+                        href="https://twitter.com/xhunkleph"
+                        className="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ion-icon name="logo-twitter" />
+                      </a>
+                    </li>
+                    <li className="social-item">
+                      <a
+                        href="https://www.linkedin.com/in/onah-sunday-0b783921a/"
+                        className="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ion-icon name="logo-linkedin" />
+                      </a>
+                    </li>
+                    <li className="social-item">
+                      <a
+                        href="mailto:sundayonah94@gmail.com"
+                        className="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ion-icon name="mail" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </section>
             </div>
           </article>
