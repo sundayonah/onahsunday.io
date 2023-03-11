@@ -530,6 +530,9 @@ main {
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
 }
+a:active {
+  color: red;
+}
 
 /*-----------------------------------*\
   #ABOUT

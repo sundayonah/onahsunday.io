@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 //INTERNAL
 import About from "./components/about";
-import Resume from "./components/resume";
 import Header from "./components/header";
 
 export default function Home() {
@@ -36,8 +35,6 @@ export default function Home() {
       </Head>
       <div>
         <Header />
-        {/* <About /> */}
-        {/* <Resume /> */}
         <h1>hello</h1>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Image from "next/image";
 import Img1 from "../images/my-avatar.png";
 import Img2 from "../images/icon-design.svg";
@@ -11,13 +12,20 @@ import port5 from "../images/bida.png";
 
 //client
 import clt1 from "../images/bida-logo.png";
-const header = () => {
+const Header = () => {
   //IMAGES
+  const [active, setActive] = useState(false);
+
+  function handleClick() {
+    setActive(!active);
+  }
+
   return (
     <div className="eneyi">
       <main>
         {/* - #SIDEBAR */}
-        <aside className="sidebar" data-sidebar>
+
+        <aside className={`sidebar ${active ? "active" : ""}`} data-sidebar>
           <div className="sidebar-info">
             <figure className="avatar-box">
               <Image src={Img1} alt="Onah Sunday" width={85} hieght={85} />
@@ -26,9 +34,9 @@ const header = () => {
               <h1 className="name" title="Onah Sunday">
                 Onah Sunday
               </h1>
-              <p className="title">Web3/Front-End Engineer</p>
+              <p className="title">Web3 / Front-End Engineer</p>
             </div>
-            <button className="info_more-btn" data-sidebar-btn>
+            <button className="info_more-btn" onClick={handleClick}>
               <span>Show Contacts</span>
               <ion-icon name="chevron-down" />
             </button>
@@ -86,28 +94,36 @@ const header = () => {
           <nav className="navbar">
             <ul className="navbar-list">
               <li className="navbar-item">
-                <button className="navbar-link active" data-nav-link>
-                  <a href="#about">About</a>
+                <button data-nav-link>
+                  <a className="navbar-link" href="#about">
+                    About
+                  </a>
                 </button>
               </li>
               <li className="navbar-item">
-                <button className="navbar-link" data-nav-link>
-                  <a href="#resume">Resume</a>
+                <button data-nav-link>
+                  <a className="navbar-link" href="#resume">
+                    Resume
+                  </a>
                 </button>
               </li>
               <li className="navbar-item">
-                <button className="navbar-link" data-nav-link>
-                  <a href="#portfolio">Portfolio</a>
+                <button data-nav-link>
+                  <a className="navbar-link" href="#portfolio">
+                    Portfolio
+                  </a>
                 </button>
               </li>
 
               <li className="navbar-item">
-                <button className="navbar-link" data-nav-link>
-                  <a href="#contact">Contact</a>
+                <button data-nav-link>
+                  <a className="navbar-link" href="#contact">
+                    Contact
+                  </a>
                 </button>
               </li>
               <li className="navbar-item">
-                <button className="navbar-link">
+                <button>
                   {/* {darkColor ? (
                     <ion-icon name="moon" />
                   ) : (
@@ -590,4 +606,4 @@ const header = () => {
     </div>
   );
 };
-export default header;
+export default Header;
