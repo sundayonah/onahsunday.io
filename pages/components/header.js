@@ -9,6 +9,8 @@ import port2 from "../images/bida-countdown.png";
 import port3 from "../images/reactmovie.png";
 import port4 from "../images/otoport.png";
 import port5 from "../images/bida.png";
+import port6 from "../images/uniswap.png";
+import port7 from "../images/lead-tracker.png";
 
 //client
 import clt1 from "../images/bida-logo.png";
@@ -419,7 +421,7 @@ const Header = () => {
                         </div>
                         <Image src={port2} alt="orizon" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Orizon</h3>
+                      <h3 className="project-title">Counter</h3>
                       <p className="project-category">Web development</p>
                     </a>
                   </li>
@@ -435,7 +437,7 @@ const Header = () => {
                         </div>
                         <Image src={port3} alt="fundo" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Fundo</h3>
+                      <h3 className="project-title">Search for your Favorite Movie</h3>
                       <p className="project-category">Web design</p>
                     </a>
                   </li>
@@ -451,8 +453,8 @@ const Header = () => {
                         </div>
                         <Image src={port4} alt="brawlhalla" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Brawlhalla</h3>
-                      <p className="project-category">Applications</p>
+                      <h3 className="project-title">Smart Contract Portfolio</h3>
+                      <p className="project-category">Web Development</p>
                     </a>
                   </li>
                   <li
@@ -467,7 +469,7 @@ const Header = () => {
                         </div>
                         <Image src={port5} alt="dsm." loading="lazy" />
                       </figure>
-                      <h3 className="project-title">DSM.</h3>
+                      <h3 className="project-title">Bid Auction</h3>
                       <p className="project-category">Web design</p>
                     </a>
                   </li>
@@ -481,9 +483,9 @@ const Header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <Image src={port1} alt="metaspark" loading="lazy" />
+                        <Image src={port6} alt="metaspark" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">MetaSpark</h3>
+                      <h3 className="project-title">uniswap Clone</h3>
                       <p className="project-category">Web design</p>
                     </a>
                   </li>
@@ -497,9 +499,9 @@ const Header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <Image src={port2} alt="summary" loading="lazy" />
+                        <Image src={port7} alt="summary" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Summary</h3>
+                      <h3 className="project-title">Lead Tracker</h3>
                       <p className="project-category">Web development</p>
                     </a>
                   </li>
@@ -603,6 +605,7 @@ const Header = () => {
           </article>
         </div>
       </main>
+      {/* <p>hello</p> */}
     </div>
   );
 };

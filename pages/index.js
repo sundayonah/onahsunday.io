@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Head from "next/head";
 import Image from "next/image";
@@ -9,6 +9,17 @@ import About from "./components/about";
 import Header from "./components/header";
 
 export default function Home() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentYear(new Date().getFullYear());
+    }, 1000 * 60 * 60 * 24 * 365); // update every year
+    return () => clearInterval(intervalId);
+  }, []);
+
+  var peace = "👋";
+
   return (
     <div>
       <Head>
@@ -35,7 +46,18 @@ export default function Home() {
       </Head>
       <div>
         <Header />
-        <h1>hello</h1>
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: "-3rem",
+            marginBottom: "5rem",
+            color: "#fff",
+          }}
+        >
+          <p>
+            &copy; {currentYear} xhunTeq. {peace}
+          </p>
+        </div>
       </div>
     </div>
   );
