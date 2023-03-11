@@ -1,4 +1,14 @@
+import Image from "next"
+import Img1 from "../images/my-avatar.png";
+import Img2 from "../images/icon-design.svg";
+import Img3 from "../images/icon-dev.svg";
+import port1 from "../images/personal.png";
+import port2 from "../images/bida-countdown.png";
+import port3 from "../images/reactmovie.png";
+import port4 from "../images/otoport.png";
+import port5 from "../images/bida.png";
 const header = () => {
+  //IMAGES
   return (
     <div className="eneyi">
       <main>
@@ -83,7 +93,7 @@ const header = () => {
               </li>
               <li className="navbar-item">
                 <button className="navbar-link" data-nav-link>
-                  Portfolio
+                  <a href="#portfolio">Portfolio</a>
                 </button>
               </li>
               <li className="navbar-item">
@@ -287,6 +297,237 @@ const header = () => {
                     </div>
                   </li>
                 </ol>
+              </section>
+
+              <section className="skill">
+                <h3 className="h3 skills-title">My skills</h3>
+                <ul className="skills-list content-card">
+                  <div className="myTechnology">
+                    <li className="skills-item">
+                      {/* FRONT-END */}
+                      <h4 className="h4 skills-title">Front-End</h4>
+                      <p className="timeline-text">React</p>
+                      <p className="timeline-text">HTML/CSS</p>
+                      <p className="timeline-text">Javascript</p>
+                      <p className="timeline-text">Next.js</p>
+                      <p className="timeline-text">Googling, Git</p>
+                    </li>
+                    <hr className="hr" />
+
+                    {/* BACK-END */}
+                    <li className="skills-item">
+                      <h4 className="h4 skills-title">Back-End</h4>
+                      <p className="timeline-text">solidity</p>
+                    </li>
+                  </div>
+                </ul>
+              </section>
+            </div>
+
+            {/* PORTFOLIO /../././././*/}
+            <div className="top-space" id="portfolio">
+              <header>
+                <h2 className="h2 article-title">Portfolio</h2>
+              </header>
+              <section className="projects">
+                {/* <ul className="filter-list">
+                  <li className="filter-item">
+                    <button className="active" data-filter-btn="">
+                      All
+                    </button>
+                  </li>
+                  <li className="filter-item">
+                    <button data-filter-btn="">Web design</button>
+                  </li>
+                  <li className="filter-item">
+                    <button data-filter-btn="">Applications</button>
+                  </li>
+                  <li className="filter-item">
+                    <button data-filter-btn="">Web development</button>
+                  </li>
+                </ul> */}
+                <div className="filter-select-box">
+                  {/* <button className="filter-select" data-select>
+                    <div className="select-value" data-selecct-value>
+                      Select category
+                    </div>
+                    <div className="select-icon">
+                      <ion-icon name="chevron-down" />
+                    </div>
+                  </button> */}
+                  <ul className="select-list">
+                    <li className="select-item">
+                      <button data-select-item="">All</button>
+                    </li>
+                    <li className="select-item">
+                      <button data-select-item="">Web design</button>
+                    </li>
+                    <li className="select-item">
+                      <button data-select-item="">Applications</button>
+                    </li>
+                    <li className="select-item">
+                      <button data-select-item="">Web development</button>
+                    </li>
+                  </ul>
+                </div>
+                <ul className="project-list">
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web development"
+                  >
+                    <a
+                      href="https://bidauction-token-v2migration.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <Image src={port1} alt="finance" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">Personal Portfolio</h3>
+                      <p className="project-category">Web development</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web development"
+                  >
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port2} alt="orizon" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">Orizon</h3>
+                      <p className="project-category">Web development</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web design"
+                  >
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port3} alt="fundo" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">Fundo</h3>
+                      <p className="project-category">Web design</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="applications"
+                  >
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port4} alt="brawlhalla" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">Brawlhalla</h3>
+                      <p className="project-category">Applications</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web design"
+                  >
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port5} alt="dsm." loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">DSM.</h3>
+                      <p className="project-category">Web design</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web design"
+                  >
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port1} alt="metaspark" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">MetaSpark</h3>
+                      <p className="project-category">Web design</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web development"
+                  >
+                    <a href="#" target="_blank" rel="noreferrer">
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port2} alt="summary" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">Summary</h3>
+                      <p className="project-category">Web development</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="applications"
+                  >
+                    <a
+                      href="https://xhunteq-movie.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port3} alt="task manager" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">Movie APP</h3>
+                      <p className="project-category">Web Developement</p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web development"
+                  >
+                    <a
+                      href="https://onahprosperity.github.io/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <img src={port4} alt="portfolio" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">Blockchain Portfolio</h3>
+                      <p className="project-category">Web development</p>
+                    </a>
+                  </li>
+                </ul>
               </section>
             </div>
           </article>
