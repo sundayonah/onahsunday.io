@@ -94,9 +94,6 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <p>hello</p>
-          </div>
         </aside>
 
         {/*#NAVBAR*/}
@@ -179,10 +176,10 @@ const Header = () => {
                     <h4 className="h4 service-item-title">
                       Front-End Developer
                     </h4>
-                    <p className="service-item-text">
-                      The most modern and high-quality design made at a
-                      professional level.
-                    </p>
+                    {/* <p className="service-item-text">
+                      The highest quality and most contemporary design crafted
+                      with professional expertise.
+                    </p> */}
                   </div>
                 </li>
                 <li className="service-item">
@@ -191,10 +188,10 @@ const Header = () => {
                   </div>
                   <div className="service-content-box">
                     <h4 className="h4 service-item-title">Web3 Developer</h4>
-                    <p className="service-item-text">
-                      High-quality development of sites at the professional
-                      level.
-                    </p>
+                    {/* <p className="service-item-text">
+                      I specializes in developing decentralized applications
+                      using blockchain technologies and protocols.
+                    </p> */}
                   </div>
                 </li>
               </ul>
@@ -516,46 +513,6 @@ const Header = () => {
                         <Image src={port7} alt="summary" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Lead Tracker</h3>
-                      <p className="project-category">Web development</p>
-                    </a>
-                  </li>
-                  <li
-                    className="project-item active"
-                    data-filter-item=""
-                    data-category="applications"
-                  >
-                    <a
-                      href="https://xhunteq-movie.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <figure className="project-img">
-                        <div className="project-item-icon-box">
-                          <ion-icon name="eye-outline" />
-                        </div>
-                        <Image src={port3} alt="task manager" loading="lazy" />
-                      </figure>
-                      <h3 className="project-title">Movie APP</h3>
-                      <p className="project-category">Web Developement</p>
-                    </a>
-                  </li>
-                  <li
-                    className="project-item active"
-                    data-filter-item=""
-                    data-category="web development"
-                  >
-                    <a
-                      href="https://onahprosperity.github.io/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <figure className="project-img">
-                        <div className="project-item-icon-box">
-                          <ion-icon name="eye-outline" />
-                        </div>
-                        <Image src={port4} alt="portfolio" loading="lazy" />
-                      </figure>
-                      <h3 className="project-title">Blockchain Portfolio</h3>
                       <p className="project-category">Web development</p>
                     </a>
                   </li>
