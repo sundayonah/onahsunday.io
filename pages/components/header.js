@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import BackToTopButton from "./backToTopButton";
+
 import Img1 from "../images/my-avatar.png";
 import Img2 from "../images/icon-design.svg";
 import Img3 from "../images/icon-dev.svg";
@@ -94,6 +96,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          {/* <h1>hello</h1> */}
         </aside>
 
         {/*#NAVBAR*/}
@@ -196,9 +199,7 @@ const Header = () => {
                 </li>
               </ul>
             </section>
-            {/* <!--
-          - clients
-         --> */}
+            {/*<!---clients-->*/}
 
             <section className="clients">
               <h3 className="h3 clients-title">Clients</h3>
@@ -216,7 +217,7 @@ const Header = () => {
                   </a>
                 </li>
 
-                <li className="clients-item">
+                {/* <li className="clients-item">
                   <a href="#">
                     <img src="" alt="client logo" />
                   </a>
@@ -238,7 +239,7 @@ const Header = () => {
                   <a href="#">
                     <img src="" alt="client logo" />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </section>
 
@@ -576,6 +577,9 @@ const Header = () => {
           </article>
         </div>
       </main>
+      <div>
+        <BackToTopButton />
+      </div>
     </div>
   );
 };
