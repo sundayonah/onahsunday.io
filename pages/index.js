@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import Head from "next/head";
-import Image from "next/image";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 //INTERNAL
-import About from "./components/about";
 import Header from "./components/header";
 
 export default function Home() {
@@ -18,7 +16,7 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
-  var peace = "👋";
+   var peace = "👋";
 
   return (
     <div>
@@ -46,6 +44,7 @@ export default function Home() {
       </Head>
       <div>
         <Header />
+        
         <div
           style={{
             textAlign: "center",

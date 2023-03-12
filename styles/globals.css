@@ -169,6 +169,19 @@ body {
   background: var(--smoky-black);
 }
 
+/* THEMETOGGLE */
+/* Light theme styles */
+.themeToggle {
+  background-color: var(--smoky-black);
+  color: #ffffff;
+}
+
+/* Dark theme styles */
+.themeToggle.dark {
+  background-color: red;
+  color: #fff;
+}
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -382,8 +395,8 @@ main {
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
@@ -530,8 +543,12 @@ main {
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
 }
-a:active {
+/* a:active {
   color: red;
+} */
+
+.navbar-link.active {
+  color: rgb(183, 24, 24);
 }
 
 /*-----------------------------------*\
@@ -1474,7 +1491,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .info-content .title {
-    padding: 5px 18px;
+    padding: 7px 18px;
   }
 
   .info_more-btn {

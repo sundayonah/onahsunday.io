@@ -17,10 +17,15 @@ import clt1 from "../images/bida-logo.png";
 const Header = () => {
   //IMAGES
   const [active, setActive] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(false);
 
   function handleClick() {
     setActive(!active);
   }
+
+  const handleToggleTheme = () => {
+    setDarkTheme((prevTheme) => !prevTheme);
+  };
 
   return (
     <div className="eneyi">
@@ -38,7 +43,7 @@ const Header = () => {
               </h1>
               <p className="title">Web3 / Front-End Engineer</p>
             </div>
-            <button className="info_more-btn" onClick={handleClick}>
+            <button className="info_more-btn" onClick={() => handleClick()}>
               <span>Show Contacts</span>
               <ion-icon name="chevron-down" />
             </button>
@@ -89,6 +94,9 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          <div>
+            <p>hello</p>
+          </div>
         </aside>
 
         {/*#NAVBAR*/}
@@ -125,13 +133,15 @@ const Header = () => {
                 </button>
               </li>
               <li className="navbar-item">
-                <button>
-                  {/* {darkColor ? (
-                    <ion-icon name="moon" />
-                  ) : (
-                    <ion-icon name="sunny" />
-                  )} */}
-                </button>
+                {/* <div className={`themeToggle ${darkTheme ? "dark" : "light"}`}>
+                  <div onClick={()=>handleToggleTheme()}>
+                    {darkTheme ? (
+                      <ion-icon name="moon" />
+                    ) : (
+                      <ion-icon name="sunny" />
+                    )}
+                  </div>
+                </div> */}
               </li>
             </ul>
           </nav>
@@ -437,7 +447,9 @@ const Header = () => {
                         </div>
                         <Image src={port3} alt="fundo" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Search for your Favorite Movie</h3>
+                      <h3 className="project-title">
+                        Search for your Favorite Movie
+                      </h3>
                       <p className="project-category">Web design</p>
                     </a>
                   </li>
@@ -453,7 +465,9 @@ const Header = () => {
                         </div>
                         <Image src={port4} alt="brawlhalla" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Smart Contract Portfolio</h3>
+                      <h3 className="project-title">
+                        Smart Contract Portfolio
+                      </h3>
                       <p className="project-category">Web Development</p>
                     </a>
                   </li>
@@ -605,7 +619,6 @@ const Header = () => {
           </article>
         </div>
       </main>
-      {/* <p>hello</p> */}
     </div>
   );
 };
