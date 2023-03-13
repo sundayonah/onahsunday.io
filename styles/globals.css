@@ -267,6 +267,7 @@ article.active {
 
 .h4 {
   font-size: var(--fs-4);
+  padding-top: 8px;
 }
 
 .h5 {
@@ -551,6 +552,45 @@ main {
   color: rgb(183, 24, 24);
 }
 
+/* MODAL NOTIFICATION MODAL */
+.ant-modal-content {
+  background-color: var(--eerie-black-2) !important;
+  color: white !important;
+  padding: 0px !important;
+}
+
+.ant-modal {
+  border: 1px solid var(--eerie-blac-2);
+  width: 400px !important;
+  border-radius: 10px;
+}
+
+.ant-modal-header {
+  background-color: var(--eerie-black-2) !important;
+}
+
+.ant-modal-title {
+  color: white !important;
+  padding-top: 17px !important;
+  margin-left: 20px !important;
+}
+
+.ant-modal-close-icon {
+  color: #aba4a4 !important;
+  transition: 0.3s;
+}
+
+.ant-modal-close-icon:hover {
+  color: white !important;
+}
+
+.modalContent {
+  border-top: 1px solid #363e54;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -898,8 +938,8 @@ main {
 
 .timeline-item-title {
   font-size: var(--fs-6);
-  line-height: 1.3;
-  margin-bottom: 7px;
+  line-height: 0.8;
+  margin-bottom: 10px;
 }
 
 .timeline-list span {
@@ -921,7 +961,7 @@ main {
 .timeline-item::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 9px;
   left: -33px;
   height: 6px;
   width: 6px;
@@ -1688,7 +1728,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .timeline-list {
-    margin-left: 65px;
+    margin-left: 60px;
   }
 
   .timeline-item:not(:last-child)::before {

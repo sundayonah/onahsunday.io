@@ -29,7 +29,7 @@ function BackToTopButton() {
       onClick={() => handleClick()}
     >
       <ion-icon
-        className="up-icon"
+        // className="up-icon"
         name="arrow-up-circle-outline"
         style={{ fontSize: "1rem" }}
       ></ion-icon>

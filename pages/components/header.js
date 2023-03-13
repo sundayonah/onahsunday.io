@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { Button, Modal } from "antd";
+
 import BackToTopButton from "./backToTopButton";
 
 import Img1 from "../images/my-avatar.png";
@@ -20,6 +22,7 @@ const Header = () => {
   //IMAGES
   const [active, setActive] = useState(false);
   const [darkTheme, setDarkTheme] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   function handleClick() {
     setActive(!active);
@@ -29,8 +32,23 @@ const Header = () => {
     setDarkTheme((prevTheme) => !prevTheme);
   };
 
+  const showModal = () => {
+    setVisible(true);
+  };
+
   return (
     <div className="eneyi">
+      <Modal
+        open={visible}
+        footer={null}
+        onCancel={() => setVisible(false)}
+        title="Notice"
+        // set background color here
+      >
+        <div className="modalContent">
+          <p>We will be adding toggle mode very soon.</p>
+        </div>
+      </Modal>
       <main>
         {/* - #SIDEBAR */}
 
@@ -124,12 +142,20 @@ const Header = () => {
                   </a>
                 </button>
               </li>
-
               <li className="navbar-item">
                 <button data-nav-link>
                   <a className="navbar-link" href="#contact">
                     Contact
                   </a>
+                </button>
+              </li>
+              <li className="navbar-item">
+                <button onClick={showModal}>
+                  <ion-icon
+                    className="notification"
+                    name="notifications-outline"
+                    style={{ fontSize: "1.5rem", color: "white" }}
+                  ></ion-icon>
                 </button>
               </li>
               <li className="navbar-item">
@@ -310,7 +336,7 @@ const Header = () => {
                       <span className="timeline-text">React,</span>
                       <span className="timeline-text">Solidity,</span>
                       <span className="timeline-text">Ethers.js,</span>
-                      <span className="timeline-text">Web3,</span>
+                      <span className="timeline-text">TailwindCSS,</span>
                       <span className="timeline-text">HTML/CSS.</span>
                     </div>
                   </li>
@@ -320,7 +346,7 @@ const Header = () => {
                     </h4>
                     <span>2022 — 2023</span>
                     <p className="timeline-text">Full Stack Developer</p>
-                    <p className="timeline-text">Integration.</p>
+                    {/* <p className="timeline-text">Integration.</p> */}
                     <h4 className="h4 timeline-item-title">Skills </h4>
                     <div className="technology">
                       <span className="timeline-text">React,</span>
@@ -524,7 +550,12 @@ const Header = () => {
                         <Image src={port7} alt="summary" loading="lazy" />
                       </figure>
                       <h3 className="project-title">Lead Tracker</h3>
-                      <p className="project-category">Web development</p>
+                      <p className="project-category">
+                        Lead_Tracker (extension) Where you can add/save your
+                        preffered url, by clicking SAVE INPUT Button, or save
+                        the active url your working with by clicking the SAVE
+                        TAB Button.
+                      </p>
                     </a>
                   </li>
                 </ul>
