@@ -206,13 +206,16 @@ const Header = () => {
 
               <ul className="clients-list has-scrollbar">
                 <li className="clients-item">
-                  <a href="#">
+                  <a href="https://onahprosperity.github.io/" target="_blank">
                     <Image src={Img1} alt="client logo" />
                   </a>
                 </li>
 
                 <li className="clients-item">
-                  <a href="#">
+                  <a
+                    href="https://bidauction-token-v2migration.vercel.app/"
+                    target="_blank"
+                  >
                     <Image src={clt1} alt="client logo" />
                   </a>
                 </li>
@@ -309,7 +312,7 @@ const Header = () => {
                   </li>
                   <li className="timeline-item">
                     <h4 className="h4 timeline-item-title">
-                      Prosperity Portfolio
+                      Smart Contract Engineer Portfolio
                     </h4>
                     <span>2022 — 2023</span>
                     <p className="timeline-text">Full Stack Developer</p>
@@ -343,7 +346,8 @@ const Header = () => {
                     {/* BACK-END */}
                     <li className="skills-item">
                       <h4 className="h4 skills-title">Back-End</h4>
-                      <p className="timeline-text">solidity</p>
+                      <p className="timeline-text">Node.js</p>
+                      {/* <p className="timeline-text">Node.js</p> */}
                     </li>
                   </div>
                 </ul>

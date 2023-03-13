@@ -11,7 +11,7 @@ function BackToTopButton() {
   }, []);
 
   const handleScroll = () => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 300) {
       // Change 300 to whatever scroll position you prefer
       setIsVisible(true);
     } else {
@@ -29,8 +29,9 @@ function BackToTopButton() {
       onClick={() => handleClick()}
     >
       <ion-icon
+        className="up-icon"
         name="arrow-up-circle-outline"
-        style={{ fontSize: "1.5rem" }}
+        style={{ fontSize: "1rem" }}
       ></ion-icon>
     </button>
   );
