@@ -151,6 +151,8 @@ const Header = () => {
             <header>
               <h2 className="h2 article-title">About me</h2>
             </header>
+            <div className="separator" />
+
             <section className="about-text">
               <p>
                 I am an ambitious Front-End / Web3 Developer with more than two
@@ -251,6 +253,8 @@ const Header = () => {
               <header>
                 <h2 className="h2 article-title">Resume</h2>
               </header>
+              <div className="separator" />
+
               <section className="timeline">
                 <div className="title-wrapper">
                   <div className="icon-box">
@@ -359,6 +363,8 @@ const Header = () => {
               <header>
                 <h2 className="h2 article-title">Portfolio</h2>
               </header>
+              <div className="separator" />
+
               <section className="projects">
                 {/* <ul className="filter-list">
                   <li className="filter-item">
@@ -532,7 +538,7 @@ const Header = () => {
                 {/* <h3 className="h3 form-title">Contact Info</h3> */}
                 <div>
                   <div className="separator" />
-                  <div className="separator" />
+                  {/* <div className="separator" /> */}
                   <ul className="social-list">
                     <li className="social-item">
                       <a
