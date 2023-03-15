@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2023 @xhunTeq.
  */
 
 /*-----------------------------------*\
@@ -400,6 +400,7 @@ main {
   font-weight: var(--fw-500);
   width: max-content;
   padding: 3px 5px;
+  margin: 5px;
   border-radius: 8px;
 }
 
@@ -532,7 +533,7 @@ main {
 .navbar-link {
   color: var(--light-gray);
   font-size: var(--fs-9);
-  padding: 20px 7px;
+  padding: 20px 15px;
   transition: color var(--transition-1);
 }
 

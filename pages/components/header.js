@@ -28,13 +28,14 @@ const Header = () => {
     setActive(!active);
   }
 
-  const handleToggleTheme = () => {
-    setDarkTheme((prevTheme) => !prevTheme);
-  };
+  // const handleToggleTheme = () => {
+  //   setDarkTheme((prevTheme) => !prevTheme);
+  // };
 
   const showModal = () => {
     setVisible(true);
   };
+  var peace = "🙋";
 
   return (
     <div className="eneyi">
@@ -46,7 +47,7 @@ const Header = () => {
         // set background color here
       >
         <div className="modalContent">
-          <p>We will be adding toggle mode very soon.</p>
+          <p>We will be adding toggle mode soon {peace}.</p>
         </div>
       </Modal>
       <main>
@@ -61,7 +62,7 @@ const Header = () => {
               <h1 className="name" title="Onah Sunday">
                 Onah Sunday
               </h1>
-              <p className="title">Web3 / Front-End Engineer</p>
+              <p className="title">Front-End Engineer</p>
             </div>
             <button className="info_more-btn" onClick={() => handleClick()}>
               <span>Show Contacts</span>
@@ -297,6 +298,7 @@ const Header = () => {
                     <p className="timeline-text">
                       Ordinary National Diploma – OND, Computer Science
                     </p>
+                    <p className="timeline-text">Computer Science</p>
                   </li>
                   <li className="timeline-item">
                     <h4 className="h4 timeline-item-title">
@@ -304,6 +306,7 @@ const Header = () => {
                     </h4>
                     <span>2016 — 2017</span>
                     <p className="timeline-text">Information Technology </p>
+                    <p className="timeline-text">NNPC</p>
                   </li>
                   <li className="timeline-item">
                     <h4 className="h4 timeline-item-title">
@@ -313,6 +316,7 @@ const Header = () => {
                     <p className="timeline-text">
                       Higher National Diploma – HND, Computer Science
                     </p>
+                    <p className="timeline-text">Computer Science</p>
                   </li>
                 </ol>
               </section>
