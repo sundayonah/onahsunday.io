@@ -506,7 +506,9 @@ const Header = () => {
                       <h3 className="project-title">
                         Smart Contract Portfolio
                       </h3>
-                      <p className="project-category">Web Development</p>
+                      <p className="project-category">
+                        Smart Contract Engineer/Auditor
+                      </p>
                     </a>
                   </li>
                   <li
@@ -522,7 +524,9 @@ const Header = () => {
                         <Image src={port5} alt="dsm." loading="lazy" />
                       </figure>
                       <h3 className="project-title">Bid Auction</h3>
-                      <p className="project-category">Web design</p>
+                      <p className="project-category">
+                        Migration from Token V1 to To Token V2
+                      </p>
                     </a>
                   </li>
                   <li
@@ -538,7 +542,10 @@ const Header = () => {
                         <Image src={port6} alt="metaspark" loading="lazy" />
                       </figure>
                       <h3 className="project-title">uniswap Clone</h3>
-                      <p className="project-category">Web design</p>
+                      <p className="project-category">
+                        A decentralized exchange (DEX) platform that mimics the
+                        functionality of Uniswap.
+                      </p>
                     </a>
                   </li>
                   <li
@@ -556,9 +563,7 @@ const Header = () => {
                       <h3 className="project-title">Lead Tracker</h3>
                       <p className="project-category">
                         Lead_Tracker (extension) Where you can add/save your
-                        preffered url, by clicking SAVE INPUT Button, or save
-                        the active url your working with by clicking the SAVE
-                        TAB Button.
+                        preffered url.
                       </p>
                     </a>
                   </li>
