@@ -26,7 +26,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <script src="./js/script.js" defer />
         <script
           type="module"
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
