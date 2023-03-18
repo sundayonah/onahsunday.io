@@ -16,12 +16,12 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
-   var peace = "👋";
+  var peace = "👋";
 
   return (
     <div>
       <Head>
-        <title>xhunTeq.</title>
+        <title>xhunTeq.io</title>
         <meta name="description" content="My Portfolio" />
         <link rel="icon" href="/favicon.ico" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
@@ -44,7 +44,7 @@ export default function Home() {
       </Head>
       <div>
         <Header />
-        
+
         <div
           style={{
             textAlign: "center",
