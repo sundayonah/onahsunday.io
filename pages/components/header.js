@@ -462,14 +462,20 @@ const Header = () => {
                     data-filter-item=""
                     data-category="web development"
                   >
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://xhunteq-movie.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <figure className="project-img">
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <Image src={port2} alt="orizon" loading="lazy" />
+                        <Image src={port3} alt="orizon" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Counter</h3>
+                      <h3 className="project-title">
+                        Search for your Favorite Movie
+                      </h3>
                       <p className="project-category">Web development</p>
                     </a>
                   </li>
@@ -478,17 +484,23 @@ const Header = () => {
                     data-filter-item=""
                     data-category="web design"
                   >
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://onahprosperity.github.io/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <figure className="project-img">
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <Image src={port3} alt="fundo" loading="lazy" />
+                        <Image src={port4} alt="fundo" loading="lazy" />
                       </figure>
                       <h3 className="project-title">
-                        Search for your Favorite Movie
+                        Smart Contract Portfolio
                       </h3>
-                      <p className="project-category">Web design</p>
+                      <p className="project-category">
+                        Smart Contract Engineer/Auditor
+                      </p>
                     </a>
                   </li>
                   <li
@@ -496,18 +508,20 @@ const Header = () => {
                     data-filter-item=""
                     data-category="applications"
                   >
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://bidauction-token-v2migration.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <figure className="project-img">
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <Image src={port4} alt="brawlhalla" loading="lazy" />
+                        <Image src={port5} alt="brawlhalla" loading="lazy" />
                       </figure>
-                      <h3 className="project-title">
-                        Smart Contract Portfolio
-                      </h3>
+                      <h3 className="project-title">Bid Auction </h3>
                       <p className="project-category">
-                        Smart Contract Engineer/Auditor
+                        Migration from Token V1 to To Token V2
                       </p>
                     </a>
                   </li>
@@ -521,11 +535,12 @@ const Header = () => {
                         <div className="project-item-icon-box">
                           <ion-icon name="eye-outline" />
                         </div>
-                        <Image src={port5} alt="dsm." loading="lazy" />
+                        <Image src={port6} alt="dsm." loading="lazy" />
                       </figure>
-                      <h3 className="project-title">Bid Auction</h3>
+                      <h3 className="project-title">uniswap Clone</h3>
                       <p className="project-category">
-                        Migration from Token V1 to To Token V2
+                        A decentralized exchange (DEX) platform that mimics the
+                        functionality of Uniswap.
                       </p>
                     </a>
                   </li>
