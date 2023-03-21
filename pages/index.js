@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>xhunTeq.io</title>
+        <title>Front-end / Web3 Developer / Integration</title>
         <meta name="description" content="My Portfolio" />
         <link rel="icon" href="/favicon.ico" />
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
