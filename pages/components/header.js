@@ -62,7 +62,7 @@ const Header = () => {
               <h1 className="name" title="Onah Sunday">
                 Onah Sunday
               </h1>
-              <p className="title">Front-End Engineer</p>
+              <p className="title">Front-End / Web3 Dev.</p>
             </div>
             <button className="info_more-btn" onClick={() => handleClick()}>
               <span>Show Contacts</span>
@@ -182,17 +182,22 @@ const Header = () => {
 
             <section className="about-text">
               <p>
-                I am an ambitious Front-End / Web3 Developer with more than two
-                years of experience, who is passionate about coding and looking
-                for a position in a reputable IT company with the chance to work
-                with the newest technology on complex and varied projects.
+                As a Front-End / web3 Developer, I possess a great love for
+                coding and have gained more than a year of experience. I have
+                fully immersed myself in web development and web3, and I am
+                continuously seeking new opportunities to learn and improve. I
+                aim to join a reputable IT company where I can work on various
+                challenging projects utilizing the most recent technologies.
               </p>
               <p>
-                My biggest strength has always been my ability to constantly be
-                prepared for any challenges that may arise. I also enjoy
-                learning about new chances that will allow me to hone my
-                abilities and provide me with the ability to collaborate with
-                other programmers around the globe.
+                My greatest strength is my ability to easily handle challenges
+                and continuously learn. I am constantly seeking new
+                opportunities to sharpen my skills and work alongside
+                programmers from all over the world. I am excited to bring my
+                experience, passion, and expertise to the table to contribute to
+                the company(s) success. With my strong work ethic, commitment,
+                and eagerness to learn, I am confident that I can make
+                meaningful contributions to any team.
               </p>
             </section>
 
@@ -381,6 +386,7 @@ const Header = () => {
                     <li className="skills-item">
                       <h4 className="h4 skills-title">Back-End</h4>
                       <p className="timeline-text">Node.js</p>
+                      <p className="timeline-text">Firebase</p>
                       {/* <p className="timeline-text">Node.js</p> */}
                     </li>
                   </div>
