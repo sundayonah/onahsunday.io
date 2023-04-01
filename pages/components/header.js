@@ -62,7 +62,7 @@ const Header = () => {
               <h1 className="name" title="Onah Sunday">
                 Onah Sunday
               </h1>
-              <p className="title">Front-End / Web3 Dev.</p>
+              <p className="title">Front-End Engineer.</p>
             </div>
             <button className="info_more-btn" onClick={() => handleClick()}>
               <span>Show Contacts</span>
