@@ -394,7 +394,7 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
+  color: var(--vegas-gold);
   background: var(--onyx);
   font-size: var(--fs-9);
   font-weight: var(--fw-500);
