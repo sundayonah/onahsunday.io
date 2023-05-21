@@ -227,7 +227,9 @@ const Header = () => {
                     <Image src={Img3} alt="Web development icon" width={40} />
                   </div>
                   <div className="service-content-box">
-                    <h4 className="h4 service-item-title">Web3 Developer</h4>
+                    <h4 className="h4 service-item-title">
+                      Blockchaim / Web3 Developer
+                    </h4>
                     {/* <p className="service-item-text">
                       I specializes in developing decentralized applications
                       using blockchain technologies and protocols.
@@ -354,6 +356,7 @@ const Header = () => {
                     <div className="technology">
                       <span className="timeline-text">React,</span>
                       <span className="timeline-text">Next.js,</span>
+                      <span className="timeline-text">Javascript,</span>
                       <span className="timeline-text">Antd,</span>
                       <span className="timeline-text">React-Context,</span>
                       <span className="timeline-text">MetaMask,</span>
@@ -375,6 +378,7 @@ const Header = () => {
                     <div className="technology">
                       <span className="timeline-text">React,</span>
                       <span className="timeline-text">React-Context,</span>
+                      <span className="timeline-text">Javascript,</span>
                       <span className="timeline-text">MetaMask,</span>
                       <span className="timeline-text">TailwindCSS,</span>
                       <span className="timeline-text">HTML.</span>
