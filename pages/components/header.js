@@ -16,6 +16,7 @@ import port5 from "../images/bida.png";
 import port6 from "../images/uniswap.png";
 import port7 from "../images/lead-tracker.png";
 import port8 from "../images/kingdomimg.png";
+import port9 from "../images/realvenmo.png";
 
 //client img
 import clt1 from "../images/bida-logo.png";
@@ -347,18 +348,20 @@ const Header = () => {
                     </h4>
                     <span>2023 — Present</span>
                     <p className="timeline-text">Design The Front-End.</p>
-                    <p className="timeline-text">Integration.</p>
+                    <p className="timeline-text">Integration, Smart-Contract</p>
+
                     <h4 className="h4 timeline-item-title">Skills </h4>
                     <div className="technology">
                       <span className="timeline-text">React,</span>
                       <span className="timeline-text">Next.js,</span>
                       <span className="timeline-text">Antd,</span>
                       <span className="timeline-text">React-Context,</span>
-                      <span className="timeline-text">MetaMaask,</span>
-                      <span className="timeline-text">Solidity,</span>
-                      <span className="timeline-text">Ethers.js,</span>
+                      <span className="timeline-text">MetaMask,</span>
                       <span className="timeline-text">TailwindCSS,</span>
                       <span className="timeline-text">HTML/CSS.</span>
+                      <span className="timeline-text">Solidity,</span>
+                      <span className="timeline-text">Ethers.js,</span>
+                      <span className="timeline-text">Hardhat,</span>
                     </div>
                   </li>
                   <li className="timeline-item">
@@ -367,16 +370,17 @@ const Header = () => {
                     </h4>
                     <span>2023 — 2023</span>
                     <p className="timeline-text">Design The Front-End.</p>
-                    <p className="timeline-text">Integration.</p>
+                    <p className="timeline-text">Integration, Smart-Contract</p>
                     <h4 className="h4 timeline-item-title">Skills </h4>
                     <div className="technology">
                       <span className="timeline-text">React,</span>
                       <span className="timeline-text">React-Context,</span>
-                      <span className="timeline-text">MetaMaask,</span>
-                      <span className="timeline-text">Solidity,</span>
-                      <span className="timeline-text">Ethers.js,</span>
+                      <span className="timeline-text">MetaMask,</span>
                       <span className="timeline-text">TailwindCSS,</span>
                       <span className="timeline-text">HTML.</span>
+                      <span className="timeline-text">Solidity,</span>
+                      <span className="timeline-text">Ethers.js,</span>
+                      <span className="timeline-text">Mocha,</span>
                     </div>
                   </li>
                   <li className="timeline-item">
@@ -408,8 +412,10 @@ const Header = () => {
                       <p className="timeline-text">HTML/CSS/TailwindCSS</p>
                       <p className="timeline-text">Javascript</p>
                       <p className="timeline-text">Next.js</p>
-                      <p className="timeline-text">Redux</p>
+                      <p className="timeline-text">React Context</p>
+                      <p className="timeline-text">Redux / Redux Toolkit</p>
                       <p className="timeline-text">Googling, Git</p>
+                      <p className="timeline-text">Ethers.js / Web3.js</p>
                     </li>
                     <hr className="hr" />
 
@@ -417,7 +423,11 @@ const Header = () => {
                     <li className="skills-item">
                       <h4 className="h4 skills-title">Back-End</h4>
                       <p className="timeline-text">Node.js</p>
-                      <p className="timeline-text">Firebase</p>
+                      <p className="timeline-text">Solidity</p>
+                      <p className="timeline-text">Node.js</p>
+                      <p className="timeline-text">Mocha</p>
+                      <p className="timeline-text">Hardhat</p>
+                      <p className="timeline-text">Truffle</p>
                       {/* <p className="timeline-text">Node.js</p> */}
                     </li>
                   </div>
@@ -480,6 +490,30 @@ const Header = () => {
                     data-category="web design"
                   >
                     <a
+                      href="https://venmo-blockchain-three.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <Image src={port9} alt="metaspark" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">
+                        Venmo. Solidity, Next, React, Javascript, Truffle,
+                      </h3>
+                      <p className="project-category">
+                        A functional replica of the Venmo website.
+                      </p>
+                    </a>
+                  </li>
+                  <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web design"
+                  >
+                    <a
                       href="https://kingdomcoinlaunchpad.io/"
                       target="_blank"
                       rel="noreferrer"
@@ -492,7 +526,7 @@ const Header = () => {
                       </figure>
                       <h3 className="project-title">Kingdom Coin LaunchPad</h3>
                       <p className="project-category">
-                        <p>A decentralize Financial System</p>
+                        A decentralize Financial System
                       </p>
                     </a>
                   </li>
@@ -599,8 +633,11 @@ const Header = () => {
                       </figure>
                       <h3 className="project-title">uniswap Clone</h3>
                       <p className="project-category">
-                        <p>Still Wroking on it</p>A decentralized exchange (DEX)
-                        platform that mimics the functionality of Uniswap.
+                        <p>
+                          <b>Still Wroking on it</b>
+                        </p>
+                        A decentralized exchange (DEX) platform that mimics the
+                        functionality of Uniswap.
                       </p>
                     </a>
                   </li>
