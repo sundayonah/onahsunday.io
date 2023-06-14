@@ -277,17 +277,7 @@ const Header = () => {
                   </a>
                 </li>
 
-                <li className="clients-item">
-                  <a href="#">
-                    <img src="" alt="client logo" />
-                  </a>
-                </li>
-
-                <li className="clients-item">
-                  <a href="#">
-                    <img src="" alt="client logo" />
-                  </a>
-                </li> */}
+            
               </ul>
             </section>
 
