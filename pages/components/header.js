@@ -17,6 +17,8 @@ import port6 from "../images/uniswap.png";
 import port7 from "../images/lead-tracker.png";
 import port8 from "../images/kingdomimg.png";
 import port9 from "../images/realvenmo.png";
+import port10 from "../images/trello-clone.png";
+import port11 from "../images/crowd-funding.png";
 
 //client img
 import clt1 from "../images/bida-logo.png";
@@ -65,7 +67,7 @@ const Header = () => {
               <h1 className="name" title="Onah Sunday">
                 Onah Sunday
               </h1>
-              <p className="title">Front-End Engineer.</p>
+              <p className="title">Front-End | Web Dev.</p>
             </div>
             <button className="info_more-btn" onClick={() => handleClick()}>
               <span>Show Contacts</span>
@@ -186,22 +188,13 @@ const Header = () => {
             <section className="about-text">
               <p>
                 As a Front-End / web3 Developer, I possess a great love for
-                coding and have gained more than a year of experience. I have
+                coding and have gained more than a two years of experience. I have
                 fully immersed myself in web development and web3, and I am
                 continuously seeking new opportunities to learn and improve. I
                 aim to join a reputable IT company where I can work on various
                 challenging projects utilizing the most recent technologies.
               </p>
-              <p>
-                My greatest strength is my ability to easily handle challenges
-                and continuously learn. I am constantly seeking new
-                opportunities to sharpen my skills and work alongside
-                programmers from all over the world. I am excited to bring my
-                experience, passion, and expertise to the table to contribute to
-                the company(s) success. With my strong work ethic, commitment,
-                and eagerness to learn, I am confident that I can make
-                meaningful contributions to any team.
-              </p>
+       
             </section>
 
             {/*service*/}
@@ -228,7 +221,7 @@ const Header = () => {
                   </div>
                   <div className="service-content-box">
                     <h4 className="h4 service-item-title">
-                      Blockchaim / Web3 Developer
+                      Web3 Developer
                     </h4>
                     {/* <p className="service-item-text">
                       I specializes in developing decentralized applications
@@ -488,11 +481,59 @@ const Header = () => {
                   </ul>
                 </div>
                 <ul className="project-list">
+                <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web design"
+                   >
+                    <a
+                      href="https://crowdfundin-on-ethereum.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <Image src={port11} alt="metaspark" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">
+                       Crowd-Funding Project 
+                      </h3>
+                      <p className="project-category">
+                       Web3 crowd-funding Project                
+                      </p>
+                    </a>
+                  </li>
+                <li
+                    className="project-item active"
+                    data-filter-item=""
+                    data-category="web design"
+                   >
+                    <a
+                      href="https://trello-2-0-app.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <figure className="project-img">
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline" />
+                        </div>
+                        <Image src={port10} alt="metaspark" loading="lazy" />
+                      </figure>
+                      <h3 className="project-title">
+                       Todo 2.0
+                      </h3>
+                      <p className="project-category">
+                        Todo Website                       
+                      </p>
+                    </a>
+                  </li>
                   <li
                     className="project-item active"
                     data-filter-item=""
                     data-category="web design"
-                  >
+                   >
                     <a
                       href="https://venmo-blockchain-three.vercel.app/"
                       target="_blank"
