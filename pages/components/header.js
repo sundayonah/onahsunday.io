@@ -181,10 +181,9 @@ const Header = () => {
           {/*#ABOUT*/}
           <article className="about active" id="about" data-page="about">
             <header>
-              <h2 className="h2 article-title">About me</h2>
+              <h2 className="h2 article-title" title="About Me" name="About Me">About me</h2>
             </header>
             <div className="separator" />
-
             <section className="about-text">
               <p>
                 As a Front-End / web3 Developer, I possess a great love for
@@ -234,7 +233,7 @@ const Header = () => {
             {/*<!---clients-->*/}
 
             <section className="clients">
-              <h3 className="h3 clients-title">Clients</h3>
+              <h3 className="h3 clients-title" title="Clients" name="Clients">Clients</h3>
 
               <ul className="clients-list has-scrollbar">
                 <li className="clients-item">
@@ -256,38 +255,13 @@ const Header = () => {
                     <Image src={clt2} alt="client logo" />
                   </a>
                 </li> */}
-
-                {/* 
-                <li className="clients-item">
-                  <a href="#">
-                    <img src="" alt="client logo" />
-                  </a>
-                </li>
-
-                <li className="clients-item">
-                  <a href="#">
-                    <img src="" alt="client logo" />
-                  </a>
-                </li>
-
-                <li className="clients-item">
-                  <a href="#">
-                    <img src="" alt="client logo" />
-                  </a>
-                </li>
-
-                <li className="clients-item">
-                  <a href="#">
-                    <img src="" alt="client logo" />
-                  </a>
-                </li> */}
               </ul>
             </section>
 
             {/* RESUME */}
             <div className="top-space" id="resume">
               <header>
-                <h2 className="h2 article-title">Resume</h2>
+                <h2 className="h2 article-title" title="Resume" name="Resume">Resume</h2>
               </header>
               <div className="separator" />
 
@@ -344,7 +318,6 @@ const Header = () => {
                     <span>2023 — Present</span>
                     <p className="timeline-text">Design The Front-End.</p>
                     <p className="timeline-text">Integration, Smart-Contract</p>
-
                     <h4 className="h4 timeline-item-title">Skills </h4>
                     <div className="technology">
                       <span className="timeline-text">React,</span>
@@ -435,36 +408,12 @@ const Header = () => {
             {/* PORTFOLIO /../././././*/}
             <div className="top-space" id="portfolio">
               <header>
-                <h2 className="h2 article-title">Portfolio</h2>
+                <h2 className="h2 article-title" title="Portfolio" name="Portfolio">Portfolio</h2>
               </header>
               <div className="separator" />
 
               <section className="projects">
-                {/* <ul className="filter-list">
-                  <li className="filter-item">
-                    <button className="active" data-filter-btn="">
-                      All
-                    </button>
-                  </li>
-                  <li className="filter-item">
-                    <button data-filter-btn="">Web design</button>
-                  </li>
-                  <li className="filter-item">
-                    <button data-filter-btn="">Applications</button>
-                  </li>
-                  <li className="filter-item">
-                    <button data-filter-btn="">Web development</button>
-                  </li>
-                </ul> */}
                 <div className="filter-select-box">
-                  {/* <button className="filter-select" data-select>
-                    <div className="select-value" data-selecct-value>
-                      Select category
-                    </div>
-                    <div className="select-icon">
-                      <ion-icon name="chevron-down" />
-                    </div>
-                  </button> */}
                   <ul className="select-list">
                     <li className="select-item">
                       <button data-select-item="">All</button>
@@ -710,7 +659,7 @@ const Header = () => {
             </div>
             <div className="top-space" id="contact">
               <header>
-                <h2 className="h2 article-title">Contact</h2>
+                <h2 className="h2 article-title" title="Contact" name="Contact">Contact</h2>
               </header>
               <section className="contact-form">
                 {/* <h3 className="h3 form-title">Contact Info</h3> */}
