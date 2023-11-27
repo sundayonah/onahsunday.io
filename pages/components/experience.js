@@ -65,7 +65,7 @@ const Experience = () => {
                      optimization.
                   </p>
                   <h4 className="h4 timeline-item-title">Skills </h4>
-                  <div className="technology">
+                  <div className="techStack">
                      <span className="timeline-text">React,</span>
                      <span className="timeline-text">Next.js,</span>
                      <span className="timeline-text">Javascript,</span>
@@ -114,7 +114,7 @@ const Experience = () => {
                   </p>
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
-                  <div className="technology">
+                  <div className="techStack">
                      <span className="timeline-text">React,</span>
                      <span className="timeline-text">Next.js,</span>
                      <span className="timeline-text">Javascript,</span>
@@ -157,7 +157,7 @@ const Experience = () => {
                   </p>
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
-                  <div className="technology">
+                  <div className="techStack">
                      <span className="timeline-text">React,</span>
                      <span className="timeline-text">React-Context,</span>
                      <span className="timeline-text">Javascript,</span>
@@ -193,7 +193,7 @@ const Experience = () => {
                   <p className="timeline-text">Full Stack Developer</p>
                   {/* <p className="timeline-text">Integration.</p> */}
                   <h4 className="h4 timeline-item-title">Skills </h4>
-                  <div className="technology">
+                  <div className="techStack">
                      <span className="timeline-text">React,</span>
                      <span className="timeline-text">Javascript,</span>
                      <span className="timeline-text">HTML/CSS,</span>

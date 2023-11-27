@@ -678,10 +678,25 @@ main {
 
 /* MYSKILLS */
 
-.myTechnology {
+/* .techStack {
    display: flex;
    justify-content: space-around;
+   flex-wrap: wrap;
+} */
+
+.techStack {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+   gap: 8px;
+   justify-content: space-between;
 }
+
+/* Add a media query for smaller screen sizes */
+/* @media screen and (max-width: 768px) {
+   .techStack {
+      grid-template-columns: 1fr;
+   }
+} */
 
 .hr {
    /* border: none; */
