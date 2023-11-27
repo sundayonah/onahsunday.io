@@ -65,7 +65,7 @@ const Header = () => {
                      <h1 className="name" title="Onah Sunday">
                         Onah Sunday
                      </h1>
-                     <p className="title">Front-End | Web3 Dev.</p>
+                     <p className="title">Front-End | Web3 Int.</p>
                   </div>
                   <button
                      className="info_more-btn"
@@ -232,7 +232,7 @@ const Header = () => {
                            </div>
                            <div className="service-content-box">
                               <h4 className="h4 service-item-title">
-                                 Web3 Developer
+                                 Web3 Integration
                               </h4>
                               {/* <p className="service-item-text">
                       I specializes in developing decentralized applications
