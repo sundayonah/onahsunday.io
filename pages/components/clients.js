@@ -43,7 +43,7 @@ const Clients = () => {
                   </a>
                </li>
                <li className="clients-item">
-                  <a href="https://kingdomcoinlaunchpad.io/" target="_blank">
+                  <a href="https://kingdom-coin.vercel.app/" target="_blank">
                      <Image
                         src={clt3}
                         alt="client logo"
@@ -53,7 +53,7 @@ const Clients = () => {
                   </a>
                </li>
                <li className="clients-item">
-                  <a href="https://moniebot.netlify.app/" target="_blank">
+                  <a href="https://monie-bot.vercel.app/" target="_blank">
                      <Image
                         src={clt4}
                         alt="client logo"

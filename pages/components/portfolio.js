@@ -84,7 +84,7 @@ const Portfolio = () => {
                      data-category="web design"
                   >
                      <a
-                        href="https://moniebot.netlify.app/"
+                        href="https://monie-bot.vercel.app/"
                         target="_blank"
                         rel="noreferrer"
                      >
@@ -154,7 +154,7 @@ const Portfolio = () => {
                      data-category="web design"
                   >
                      <a
-                        href="https://kingdomcoinlaunchpad.io/"
+                        href="https://kingdom-coin.vercel.app/"
                         target="_blank"
                         rel="noreferrer"
                      >
