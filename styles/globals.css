@@ -113,6 +113,33 @@
 }
 
 /*-----------------------------------*\
+  #scroll bar
+\*-----------------------------------*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+   background-color: var(--orange-yellow-crayola);
+   border-radius: 6px;
+}
+
+/* Customize the scrollbar track (the background) */
+::-webkit-scrollbar-track {
+   background-color: var(--shadow-1);
+}
+
+/* Customize the scrollbar's width and height */
+::-webkit-scrollbar {
+   width: 5px;
+   height: 10px;
+}
+
+/*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
 
