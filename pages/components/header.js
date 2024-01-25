@@ -116,10 +116,11 @@ const Header = () => {
                            target="_blank"
                            rel="noopener noreferrer"
                         >
-                           <ion-icon name="mail" />
+                           {/* <ion-icon name="mail" /> */}
                         </a>
                      </li>
                   </ul>
+                  {/* <p>{`Jesus is Lord`}</p> */}
                </div>
                {/* <h1>hello</h1> */}
             </aside>
@@ -216,10 +217,10 @@ const Header = () => {
                               <h4 className="h4 service-item-title">
                                  Front-End Developer
                               </h4>
-                              {/* <p className="service-item-text">
-                      The highest quality and most contemporary design crafted
-                      with professional expertise.
-                    </p> */}
+                              <p className="service-item-text">
+                                 The highest quality and most contemporary
+                                 design crafted with professional expertise.
+                              </p>
                            </div>
                         </li>
                         <li className="service-item">
@@ -234,10 +235,12 @@ const Header = () => {
                               <h4 className="h4 service-item-title">
                                  Web3 Integration
                               </h4>
-                              {/* <p className="service-item-text">
-                      I specializes in developing decentralized applications
-                      using blockchain technologies and protocols.
-                    </p> */}
+                              <p className="service-item-text">
+                                 I specializes in integrating decentralized
+                                 applications {`(dApp)`}, using blockchain
+                                 technologies and protocols.{' '}
+                                 {`< Ethereum, Solana />`}
+                              </p>
                            </div>
                         </li>
                      </ul>
