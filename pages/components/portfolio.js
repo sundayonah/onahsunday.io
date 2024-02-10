@@ -17,6 +17,7 @@ import port9 from '../images/realvenmo.png';
 import port10 from '../images/trello-clone.png';
 import port11 from '../images/monieProject.png';
 import port12 from '../images/augutine.png';
+import port13 from '../images/solana-token.png';
 
 //client img
 import clt1 from '../images/bida-logo.png';
@@ -58,7 +59,27 @@ const Portfolio = () => {
                   </ul>
                </div>
                <ul className="project-list">
-                  <li
+                          <li
+                     className="project-item active"
+                     data-filter-item=""
+                     data-category="web design"
+                  >
+                     <a
+                        href="https://solana-token-beta.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
+                        <figure className="project-img">
+                           <div className="project-item-icon-box">
+                              <ion-icon name="eye-outline" />
+                           </div>
+                           <Image src={port13} alt="metaspark" loading="lazy" />
+                        </figure>
+                        <h3 className="project-title">Solana Token</h3>
+                        <p className="project-category">Launch your solana token, All in one solana token development and deployment.</p>
+                     </a>
+                  </li>
+                  {/* <li
                      className="project-item active"
                      data-filter-item=""
                      data-category="web design"
@@ -77,7 +98,7 @@ const Portfolio = () => {
                         <h3 className="project-title">E-commerce</h3>
                         <p className="project-category">E-commerce Project</p>
                      </a>
-                  </li>
+                  </li> */}
                   <li
                      className="project-item active"
                      data-filter-item=""
