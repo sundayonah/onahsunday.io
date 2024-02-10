@@ -311,7 +311,7 @@ const Portfolio = () => {
                               </a>
                            </li> */}
 
-                  <li
+                  {/* <li
                      className="project-item active"
                      data-filter-item=""
                      data-category="web development"
@@ -329,7 +329,7 @@ const Portfolio = () => {
                            preffered url.
                         </p>
                      </a>
-                  </li>
+                  </li> */}
                </ul>
             </section>
          </div>
