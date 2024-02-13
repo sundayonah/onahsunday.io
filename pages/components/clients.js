@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Img1 from '../images/my-avatar.png';
-import Img2 from '../images/icon-design.svg';
-import Img3 from '../images/icon-dev.svg';
+// import Img2 from '../images/icon-design.svg';
+// import Img3 from '../images/icon-dev.svg';
 import clt1 from '../images/bida-logo.png';
-import clt2 from '../images/kingdomcoinlogo.jpg';
+// import clt2 from '../images/kingdomcoinlogo.jpg';
 import clt3 from '../images/logo.png';
 import clt4 from '../images/monie.png';
 import Image from 'next/image';
