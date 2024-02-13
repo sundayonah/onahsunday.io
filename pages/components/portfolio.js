@@ -65,7 +65,7 @@ const Portfolio = () => {
                      data-category="web design"
                   >
                      <a
-                        href="https://solana-token-beta.vercel.app/"
+                        href="https://twitter-dapp-smoky.vercel.app/"
                         target="_blank"
                         rel="noreferrer"
                      >
