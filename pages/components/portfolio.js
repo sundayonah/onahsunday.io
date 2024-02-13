@@ -6,7 +6,7 @@ import Img2 from '../images/icon-design.svg';
 import Img3 from '../images/icon-dev.svg';
 // portfolio
 import port1 from '../images/personal.png';
-import port2 from '../images/bida-countdown.png';
+import port2 from '../images/twitterDApp.png';
 import port3 from '../images/reactmovie.png';
 import port4 from '../images/otoport.png';
 import port5 from '../images/bida.png';
@@ -59,7 +59,33 @@ const Portfolio = () => {
                   </ul>
                </div>
                <ul className="project-list">
-                          <li
+                  <li
+                     className="project-item active"
+                     data-filter-item=""
+                     data-category="web design"
+                  >
+                     <a
+                        href="https://solana-token-beta.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
+                        <figure className="project-img">
+                           <div className="project-item-icon-box">
+                              <ion-icon name="eye-outline" />
+                           </div>
+                           <Image src={port2} alt="metaspark" loading="lazy" />
+                        </figure>
+                        <h3 className="project-title">Twitter DApp</h3>
+                        <p className="project-category">
+                           Twitter Decentralize Application.
+                           <p>
+                              Tweet securely and transparently with Twitter
+                              DApp.
+                           </p>
+                        </p>
+                     </a>
+                  </li>
+                  <li
                      className="project-item active"
                      data-filter-item=""
                      data-category="web design"
@@ -76,7 +102,10 @@ const Portfolio = () => {
                            <Image src={port13} alt="metaspark" loading="lazy" />
                         </figure>
                         <h3 className="project-title">Solana Token</h3>
-                        <p className="project-category">Launch your solana token, All in one solana token development and deployment.</p>
+                        <p className="project-category">
+                           Launch your solana token, All in one solana token
+                           development and deployment.
+                        </p>
                      </a>
                   </li>
                   {/* <li
