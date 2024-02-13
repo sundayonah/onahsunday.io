@@ -26,8 +26,9 @@ const MySkills = () => {
                      <p className="timeline-text">Next.js</p>
                      <p className="timeline-text">React Context</p>
                      <p className="timeline-text">Redux / Redux Toolkit</p>
-                     <p className="timeline-text">Googling, Git</p>
                      <p className="timeline-text">Ethers.js / Web3.js</p>
+                     <p className="timeline-text">wagmi, web3Modal</p>
+                     <p className="timeline-text">Googling, Git</p>
                   </li>
                   <hr className="hr" />
 
@@ -37,7 +38,7 @@ const MySkills = () => {
                      <p className="timeline-text">mongoDB</p>
                      <p className="timeline-text">Node.js</p>
                      <p className="timeline-text">Hardhat</p>
-                     {/* <p className="timeline-text">Node.js</p> */}
+                     <p className="timeline-text">Solidity</p>
                   </li>
                </div>
             </ul>
