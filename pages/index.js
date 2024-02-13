@@ -24,7 +24,6 @@ export default function Home() {
             <title>Front-end / Web3 Developer / Integration</title>
             <meta name="description" content="My Portfolio" />
             <link rel="icon" href="/favicon.ico" />
-            {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
             <link
                rel="preconnect"
                href="https://fonts.gstatic.com"
@@ -35,10 +34,6 @@ export default function Home() {
                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
                defer
             />
-            {/* <script
-          nomodule
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script> */}
 
             <link
                href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
