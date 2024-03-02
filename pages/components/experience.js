@@ -20,6 +20,36 @@ const Experience = () => {
             <ol className="timeline-list">
                <li className="timeline-item">
                   <h4 className="h4 timeline-item-title">
+                     Web3 Engineer @GOWFO
+                  </h4>
+                  <span>February 2024 — Present</span>
+                  <p className="timeline-text paragraph-dot">
+                     WFO is an extreme sports network on a mission to help fans,
+                     creators, and athletes of extreme sports collaborate, widen
+                     their audience, and monetize their content. working as:
+                  </p>
+
+                  <p className="timeline-text paragraph-dot">
+                     A Smart contract Developer.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Web3 Integration.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Integrating APIs with frontend.
+                  </p>
+
+                  <h4 className="h4 timeline-item-title">Skills </h4>
+                  <div className="techStack">
+                     <span className="timeline-text">Solidity,</span>
+                     <span className="timeline-text">React,</span>
+                     <span className="timeline-text">Javascript,</span>
+                     <span className="timeline-text">Next.js,</span>
+                  </div>
+               </li>
+
+               <li className="timeline-item">
+                  <h4 className="h4 timeline-item-title">
                      Full stack Developer @Best Descovery Generation
                   </h4>
                   <span>June 2023 — July 2023</span>
