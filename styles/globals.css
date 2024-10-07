@@ -1,22 +1,8 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2023 @xhunTeq.
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-   /**
-   * colors
-   */
-
-   /* gradient */
-
    --bg-gradient-onyx: linear-gradient(
       to bottom right,
       hsl(240, 1%, 25%) 3%,

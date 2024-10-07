@@ -4,12 +4,7 @@ const Resume = () => {
    return (
       <>
          <div className="top-space">
-            {/* <header>
-               <h2 className="h2 article-title" title="Resume" name="Resume">
-                  Resume
-               </h2>
-            </header>
-            <div className="separator" /> */}
+      
 
             <section className="timeline">
                <div className="title-wrapper">

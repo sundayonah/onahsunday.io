@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import Head from 'next/head';
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 //INTERNAL
 import Header from './components/header';

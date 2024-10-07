@@ -4,7 +4,6 @@ const MySkills = () => {
    return (
       <>
          <section className="skill">
-            {/* <div className="top-space" id="portfolio"> */}
             <header>
                <h2
                   className="h2 article-title"
@@ -14,7 +13,6 @@ const MySkills = () => {
                   My skills
                </h2>
             </header>
-            {/* <h3 className="h3 skills-title"></h3> */}
             <ul className="skills-list content-card">
                <div className="myTechnology">
                   <li className="skills-item">

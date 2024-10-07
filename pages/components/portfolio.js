@@ -11,20 +11,11 @@ import port3 from '../images/reactmovie.png';
 import port4 from '../images/otoport.png';
 import port5 from '../images/bida.png';
 import port6 from '../images/uniswap.png';
-import port7 from '../images/lead-tracker.png';
 import port8 from '../images/kingdomimg.png';
 import port9 from '../images/realvenmo.png';
 import port10 from '../images/trello-clone.png';
 import port11 from '../images/monieProject.png';
-import port12 from '../images/augutine.png';
 import port13 from '../images/solana-token.png';
-
-//client img
-import clt1 from '../images/bida-logo.png';
-import clt2 from '../images/kingdomcoinlogo.jpg';
-import Resume from './resume';
-import Experience from './experience';
-import MySkills from './mySkills';
 
 const Portfolio = () => {
    return (
@@ -39,7 +30,9 @@ const Portfolio = () => {
                   Portfolio
                </h2>
             </header>
-            <div className="separator" />
+            {/* <div className="separator" /> */}
+         <hr className="hr" />
+
 
             <section className="projects">
                <div className="filter-select-box">
@@ -76,13 +69,13 @@ const Portfolio = () => {
                            <Image src={port2} alt="metaspark" loading="lazy" />
                         </figure>
                         <h3 className="project-title">Twitter DApp</h3>
-                        <p className="project-category">
+                        <span className="project-category">
                            Twitter Decentralize Application.
                            <p>
                               Tweet securely and transparently with Twitter
                               DApp.
                            </p>
-                        </p>
+                        </span>
                      </a>
                   </li>
                   <li
@@ -310,55 +303,6 @@ const Portfolio = () => {
                         </p>
                      </a>
                   </li>
-
-                  {/* <li
-                              className="project-item active"
-                              data-filter-item=""
-                              data-category="web design"
-                           >
-                              <a href="#" target="_blank" rel="noreferrer">
-                                 <figure className="project-img">
-                                    <div className="project-item-icon-box">
-                                       <ion-icon name="eye-outline" />
-                                    </div>
-                                    <Image
-                                       src={port6}
-                                       alt="metaspark"
-                                       loading="lazy"
-                                    />
-                                 </figure>
-                                 <h3 className="project-title">
-                                    uniswap Clone
-                                 </h3>
-                                 <p className="project-category">
-                                    <p>
-                                       <b>Still Wroking on it</b>
-                                    </p>
-                                    A decentralized exchange (DEX) platform that
-                                    mimics the functionality of Uniswap.
-                                 </p>
-                              </a>
-                           </li> */}
-
-                  {/* <li
-                     className="project-item active"
-                     data-filter-item=""
-                     data-category="web development"
-                  >
-                     <a href="#" target="_blank" rel="noreferrer">
-                        <figure className="project-img">
-                           <div className="project-item-icon-box">
-                              <ion-icon name="eye-outline" />
-                           </div>
-                           <Image src={port7} alt="summary" loading="lazy" />
-                        </figure>
-                        <h3 className="project-title">Lead Tracker</h3>
-                        <p className="project-category">
-                           Lead_Tracker (extension) Where you can add/save your
-                           preffered url.
-                        </p>
-                     </a>
-                  </li> */}
                </ul>
             </section>
          </div>

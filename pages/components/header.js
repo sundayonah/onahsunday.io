@@ -8,14 +8,13 @@ import Img1 from '../images/my-avatar.png';
 import Img2 from '../images/icon-design.svg';
 import Img3 from '../images/icon-dev.svg';
 
-//client img
-import clt1 from '../images/bida-logo.png';
-import clt2 from '../images/kingdomcoinlogo.jpg';
+
 import Resume from './resume';
 import Experience from './experience';
 import MySkills from './mySkills';
 import Portfolio from './portfolio';
 import Clients from './clients';
+import NpmPackages from "./npmPackages"
 const Header = () => {
    //IMAGES
    const [active, setActive] = useState(false);
@@ -116,13 +115,10 @@ const Header = () => {
                            target="_blank"
                            rel="noopener noreferrer"
                         >
-                           {/* <ion-icon name="mail" /> */}
                         </a>
                      </li>
                   </ul>
-                  {/* <p>{`Jesus is Lord`}</p> */}
                </div>
-               {/* <h1>hello</h1> */}
             </aside>
 
             {/*#NAVBAR*/}
@@ -167,15 +163,6 @@ const Header = () => {
                         </button>
                      </li>
                      <li className="navbar-item">
-                        {/* <div className={`themeToggle ${darkTheme ? "dark" : "light"}`}>
-                  <div onClick={()=>handleToggleTheme()}>
-                    {darkTheme ? (
-                      <ion-icon name="moon" />
-                    ) : (
-                      <ion-icon name="sunny" />
-                    )}
-                  </div>
-                </div> */}
                      </li>
                   </ul>
                </nav>
@@ -258,6 +245,10 @@ const Header = () => {
 
                   {/* PORTFOLIO /../././././*/}
                   <Portfolio />
+
+                  
+                  {/* MySkills */}
+                  <NpmPackages />
 
                   {/* MySkills */}
                   <MySkills />
