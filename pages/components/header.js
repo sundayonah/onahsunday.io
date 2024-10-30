@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Button, Modal } from 'antd';
+import { usePackages } from '../../hooks/usePackages';
 
 import BackToTopButton from './backToTopButton';
 
@@ -8,15 +9,14 @@ import Img1 from '../images/my-avatar.png';
 import Img2 from '../images/icon-design.svg';
 import Img3 from '../images/icon-dev.svg';
 
-
 import Resume from './resume';
 import Experience from './experience';
 import MySkills from './mySkills';
 import Portfolio from './portfolio';
 import Clients from './clients';
-import NpmPackages from "./npmPackages"
+import NpmPackages from './npmPackages';
+import Contact from './contact';
 const Header = () => {
-   //IMAGES
    const [active, setActive] = useState(false);
    const [darkTheme, setDarkTheme] = useState(false);
    const [visible, setVisible] = useState(false);
@@ -33,6 +33,9 @@ const Header = () => {
       setVisible(true);
    };
    var peace = '🙋';
+
+
+   const { npmPackages } = usePackages();
 
    return (
       <div className="eneyi">
@@ -114,8 +117,7 @@ const Header = () => {
                            className="social-link"
                            target="_blank"
                            rel="noopener noreferrer"
-                        >
-                        </a>
+                        ></a>
                      </li>
                   </ul>
                </div>
@@ -162,8 +164,7 @@ const Header = () => {
                            ></ion-icon>
                         </button>
                      </li>
-                     <li className="navbar-item">
-                     </li>
+                     <li className="navbar-item"></li>
                   </ul>
                </nav>
 
@@ -232,87 +233,20 @@ const Header = () => {
                         </li>
                      </ul>
                   </section>
-                  {/*<!---clients-->*/}
 
                   <Clients />
 
-                  {/* EXPERIENCE */}
                   <Experience />
-
-                  {/* RESUME */}
 
                   <Resume />
 
-                  {/* PORTFOLIO /../././././*/}
                   <Portfolio />
 
-                  
-                  {/* MySkills */}
-                  <NpmPackages />
+                  <NpmPackages npmPackages={npmPackages} />
 
-                  {/* MySkills */}
                   <MySkills />
 
-                  <div className="top-space" id="contact">
-                     <header>
-                        <h2
-                           className="h2 article-title"
-                           title="Contact"
-                           name="Contact"
-                        >
-                           Contact
-                        </h2>
-                     </header>
-                     <section className="contact-form">
-                        {/* <h3 className="h3 form-title">Contact Info</h3> */}
-                        <div>
-                           <div className="separator" />
-                           {/* <div className="separator" /> */}
-                           <ul className="social-list">
-                              <li className="social-item">
-                                 <a
-                                    href="https://github.com/sundayonah"
-                                    className="social-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                 >
-                                    <ion-icon name="logo-github" />
-                                 </a>
-                              </li>
-                              <li className="social-item">
-                                 <a
-                                    href="https://twitter.com/xhunkleph"
-                                    className="social-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                 >
-                                    <ion-icon name="logo-twitter" />
-                                 </a>
-                              </li>
-                              <li className="social-item">
-                                 <a
-                                    href="https://www.linkedin.com/in/onah-sunday-0b783921a/"
-                                    className="social-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                 >
-                                    <ion-icon name="logo-linkedin" />
-                                 </a>
-                              </li>
-                              <li className="social-item">
-                                 <a
-                                    href="mailto:sundayonah94@gmail.com"
-                                    className="social-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                 >
-                                    <ion-icon name="mail" />
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </section>
-                  </div>
+                  <Contact />
                </article>
             </div>
          </main>

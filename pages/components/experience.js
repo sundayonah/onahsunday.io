@@ -18,6 +18,8 @@ const Experience = () => {
                <h3 className="h3">Experience</h3>
             </div>
             <ol className="timeline-list">
+       
+
                <li className="timeline-item">
                   <h4 className="h4 timeline-item-title">
                      Web3 Engineer @GOWFO
@@ -45,6 +47,43 @@ const Experience = () => {
                      <span className="timeline-text">React,</span>
                      <span className="timeline-text">Javascript,</span>
                      <span className="timeline-text">Next.js,</span>
+                  </div>
+               </li>
+
+
+
+                       <li className="timeline-item">
+                  <h4 className="h4 timeline-item-title">
+                     Full Stack Developer @wogaa
+                  </h4>
+                  <span>July 2024 — September 2024</span>
+                  <p className="timeline-text paragraph-dot">
+                     Word of God Abundantly Assembly (WOGA) is a church with a
+                     mission to inspire and uplift lives through the guiding
+                     principles of the Word of God. Their focus is on empowering
+                     individuals to overcome life’s challenges and live
+                     triumphantly. Rooted in biblical teachings, WOGA emphasizes
+                     faith, spiritual growth, and community support, aiming to
+                     transform lives through truth, guidance, and the message of
+                     hope. Their outreach extends to helping the downcast,
+                     raising leaders, and preparing members for a fulfilling,
+                     faith-driven life
+                  </p>
+
+                  <p className="timeline-text paragraph-dot">
+                     Full Stack Developer
+                  </p>
+
+                  <h4 className="h4 timeline-item-title">Skills </h4>
+                  <div className="techStack">
+                     <span className="timeline-text">Javascript,</span>
+                     <span className="timeline-text">Next.js,</span>
+                     <span className="timeline-text">Typescript,</span>
+                     <span className="timeline-text">Zod,</span>
+                     <span className="timeline-text">Framer Motion,</span>
+                     <span className="timeline-text">TailwindCSS,</span>
+                     <span className="timeline-text">Nodemailer,</span>
+                     <span className="timeline-text">Firebase,</span>
                   </div>
                </li>
 
