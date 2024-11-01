@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Button, Modal } from 'antd';
 import { usePackages } from '../../hooks/usePackages';
+import { useProjects } from '../../hooks/useProjects';
 
 import BackToTopButton from './backToTopButton';
 
@@ -34,8 +35,8 @@ const Header = () => {
    };
    var peace = '🙋';
 
-
    const { npmPackages } = usePackages();
+
 
    return (
       <div className="eneyi">
@@ -240,7 +241,7 @@ const Header = () => {
 
                   <Resume />
 
-                  <Portfolio />
+                  <Portfolio  />
 
                   <NpmPackages npmPackages={npmPackages} />
 

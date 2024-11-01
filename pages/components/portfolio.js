@@ -16,8 +16,16 @@ import port9 from '../images/realvenmo.png';
 import port10 from '../images/trello-clone.png';
 import port11 from '../images/monieProject.png';
 import port13 from '../images/solana-token.png';
+import { useProjects } from '../../hooks/useProjects';
 
 const Portfolio = () => {
+   const { projects, loading, error } = useProjects();
+   // console.log(projects, 'projects in header');
+
+   if (loading) return <div>Loading...</div>;
+   if (error) return <div>Error: {error}</div>;
+   console.log(projects);
+
    return (
       <>
          <div className="top-space" id="portfolio">
@@ -31,8 +39,7 @@ const Portfolio = () => {
                </h2>
             </header>
             {/* <div className="separator" /> */}
-         <hr className="hr" />
-
+            <hr className="hr" />
 
             <section className="projects">
                <div className="filter-select-box">
@@ -52,33 +59,40 @@ const Portfolio = () => {
                   </ul>
                </div>
                <ul className="project-list">
-                  <li
-                     className="project-item active"
-                     data-filter-item=""
-                     data-category="web design"
-                  >
-                     <a
-                        href="https://twitter-dapp-smoky.vercel.app/"
-                        target="_blank"
-                        rel="noreferrer"
+                  {projects.map((project) => (
+                     <li
+                        key={project.id}
+                        className="project-item active"
+                        data-filter-item=""
+                        data-category="web design"
                      >
-                        <figure className="project-img">
-                           <div className="project-item-icon-box">
-                              <ion-icon name="eye-outline" />
-                           </div>
-                           <Image src={port2} alt="metaspark" loading="lazy" />
-                        </figure>
-                        <h3 className="project-title">Twitter DApp</h3>
-                        <span className="project-category">
-                           Twitter Decentralize Application.
-                           <p>
-                              Tweet securely and transparently with Twitter
-                              DApp.
-                           </p>
-                        </span>
-                     </a>
-                  </li>
-                  <li
+                        <a href={project.link} target="_blank" rel="noreferrer">
+                           <figure className="project-img">
+                              <div className="project-item-icon-box">
+                                 <ion-icon name="eye-outline" />
+                              </div>
+                              <Image
+                                 src={project.imageUrl}
+                                 alt={project.name}
+                                 width={1000}
+                                 height={150}
+                                 className=""
+                                 loading="lazy"
+                              />
+                           </figure>
+                           <h3 className="project-title">{project.name}</h3>
+                           <span className="project-category">
+                              {project.description}
+                           </span>
+                        </a>
+                        <ul className="project-stacks">
+                           {project.stacks.map((stack, index) => (
+                              <li key={index}>{stack}</li>
+                           ))}
+                        </ul>
+                     </li>
+                  ))}
+                  {/* <li
                      className="project-item active"
                      data-filter-item=""
                      data-category="web design"
@@ -101,7 +115,7 @@ const Portfolio = () => {
                         </p>
                      </a>
                   </li>
-                  {/* <li
+                  <li
                      className="project-item active"
                      data-filter-item=""
                      data-category="web design"
@@ -120,7 +134,7 @@ const Portfolio = () => {
                         <h3 className="project-title">E-commerce</h3>
                         <p className="project-category">E-commerce Project</p>
                      </a>
-                  </li> */}
+                  </li>
                   <li
                      className="project-item active"
                      data-filter-item=""
@@ -302,7 +316,7 @@ const Portfolio = () => {
                            Migration from Token V1 to To Token V2
                         </p>
                      </a>
-                  </li>
+                  </li> */}
                </ul>
             </section>
          </div>

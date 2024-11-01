@@ -2,7 +2,7 @@
 
 
 const PROJECT_BASE_URL = process.env.NEXT_PUBLIC_PROJECT_BASE_URL
-const PACKAGES_BASE_URL = process.env.NEXT_PUBLIC_PACKAGES_BASE_URL
+const PACKAGES_BASE_URL = process.env.NEXT_PUBLIC_PACKAGES_BASE_URL;
 
 
 export async function getProjects() {
@@ -13,11 +13,13 @@ export async function getProjects() {
     }
     // revalidatePath('/');
 
+    // console.log(await response.json(), "response in action")
+
     return await response.json();
 }
 
 export async function getPackages() {
-    const response = await fetch(PACKAGES_BASE_URL);
+    const response = await fetch(`${PACKAGES_BASE_URL}`);
 
 
     if (!response.ok) {

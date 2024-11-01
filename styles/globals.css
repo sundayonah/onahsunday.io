@@ -1285,6 +1285,22 @@ main {
    font-weight: var(--fw-300);
 }
 
+.project-stacks {
+   margin-top: 10px;
+   padding-left: 0; /* Remove default list padding */
+}
+
+.project-stacks li {
+   display: inline-block;
+   background-color: #f0f0f0;
+   border-radius: 4px;
+   color: #333;
+   font-size: 12px;
+   margin-right: 8px;
+   padding: 2px 6px;
+   text-align: center;
+}
+
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/

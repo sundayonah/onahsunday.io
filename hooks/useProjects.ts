@@ -1,22 +1,25 @@
-// import { useState, useEffect } from 'react';
-// import { getProjects } from '../actions/actions';
+import { useState, useEffect } from 'react';
+import { getProjects } from '../actions/actions';
 
-// export const useProjects = () => {
-//     const [projects, setProjects] = useState([]);
+export const useProjects = () => {
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-//     useEffect(() => {
-//         async function fetchData() {
-//             try {
-//                 const fetchedProjects = await getProjects();
-//                 setProjects(fetchedProjects);
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const fetchedProjects = await getProjects();
+                // console.log(fetchedProjects)
+                setProjects(fetchedProjects);
+                setLoading(false);
+            } catch (err) {
+                setError(err.message || 'An unknown error occurred');
+                setLoading(false);
+            }
+        }
+        fetchData();
+    }, []);
 
-//             } catch (error) {
-//                 console.error('Error fetching data:', error);
-//             }
-//         }
-
-//         fetchData();
-//     }, []);
-
-//     return { projects };
-// };
+    return { projects, loading, error };
+};

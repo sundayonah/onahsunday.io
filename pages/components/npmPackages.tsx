@@ -34,12 +34,17 @@ const NpmPackages = ({ npmPackages }) => {
                   <p className="mt-4 timeline-text  text-gray-400">
                      {pkg.description}
                   </p>
+                   <ul className="project-stacks">
+                           {pkg.stacks.map((stack, index) => (
+                              <li key={index}>{stack}</li>
+                           ))}
+                        </ul>
                   <div className="mt-6 flex space-x-4">
                      <a
                         href={pkg.npmUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline"
+                        className="text-blue-600 hover:underline cursor-pointer"
                      >
                         View on npm
                      </a>
