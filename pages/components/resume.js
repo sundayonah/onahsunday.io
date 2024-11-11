@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 
 const Resume = () => {
+
+
+   useEffect(() => {
+      AOS.init({ duration: 800 });
+   }, []);
+
+
    return (
       <>
          <div className="top-space">
-      
 
-            <section className="timeline">
+
+            <section className="timeline" data-aos="fade-up">
                <div className="title-wrapper">
                   <div className="icon-box">
                      <ion-icon name="book-outline" />

@@ -21,7 +21,7 @@ const NpmPackages = () => {
  
 
    return (
-      <section className="py-8">
+      <section className="py-8" data-aos="fade-up">
          <h2 className="h2 article-title mt-3" title="Portfolio">
             Npm Packages
          </h2>

@@ -1,9 +1,21 @@
 import React from 'react';
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+
 const MySkills = () => {
+
+   useEffect(() => {
+      AOS.init({ duration: 800 });
+   }, []);
+
    return (
       <>
-         <section className="skill">
+         <section className="skill" data-aos="fade-up">
             <header>
                <h2
                   className="h2 article-title"
