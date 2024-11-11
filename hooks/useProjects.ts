@@ -1,3 +1,4 @@
+// useProjects.js
 import { useState, useEffect } from 'react';
 import { getProjects } from '../actions/actions';
 
@@ -10,14 +11,18 @@ export const useProjects = () => {
         async function fetchData() {
             try {
                 const fetchedProjects = await getProjects();
-                // console.log(fetchedProjects)
+                if (!fetchedProjects) {
+                    throw new Error('No projects data received');
+                }
                 setProjects(fetchedProjects);
-                setLoading(false);
             } catch (err) {
+                console.error('Error fetching projects:', err);
                 setError(err.message || 'An unknown error occurred');
+            } finally {
                 setLoading(false);
             }
         }
+
         fetchData();
     }, []);
 
