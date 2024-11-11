@@ -1,26 +1,34 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Experience = () => {
+
+   useEffect(() => {
+      AOS.init({ duration: 800, once: true });
+   }, []);
+
+
    return (
       <>
          {/* EXPERIENCE */}
          <section className="timeline" id="resume">
             <header>
-               <h2 className="h2 article-title" title="Resume" name="Resume">
+               <h2 className="h2 article-title" title="Resume" name="Resume" data-aos="fade-up">
                   Resume
                </h2>
             </header>
             <div className="separator" />
-            <div className="title-wrapper">
+            <div className="title-wrapper" data-aos="fade-up">
                <div className="icon-box">
                   <ion-icon name="book-outline" />
                </div>
                <h3 className="h3">Experience</h3>
             </div>
             <ol className="timeline-list">
-       
 
-               <li className="timeline-item">
+
+               <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
                      Web3 Engineer @GOWFO
                   </h4>
@@ -52,7 +60,7 @@ const Experience = () => {
 
 
 
-                       <li className="timeline-item">
+               <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
                      Full Stack Developer @wogaa
                   </h4>
@@ -87,7 +95,7 @@ const Experience = () => {
                   </div>
                </li>
 
-               <li className="timeline-item">
+               <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
                      Full stack Developer @Best Descovery Generation
                   </h4>
@@ -148,7 +156,7 @@ const Experience = () => {
                   </div>
                </li>
 
-               <li className="timeline-item">
+               <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
                      Front-end & Web3 Integration @The KingdonCoin LaunchPad
                   </h4>
@@ -198,7 +206,7 @@ const Experience = () => {
                   </div>
                </li>
 
-               <li className="timeline-item">
+               <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
                      front-end & wen3 integration @BIDA Token Migration
                   </h4>
@@ -239,7 +247,7 @@ const Experience = () => {
                   </div>
                </li>
 
-               <li className="timeline-item">
+               <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
                      full stack developer @Smart Contract Engineer Portfolio
                   </h4>
