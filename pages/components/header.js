@@ -14,9 +14,9 @@ import dynamic from 'next/dynamic';
 // import Resume from './resume';
 // import Experience from './experience';
 // import MySkills from './mySkills';
-// import Portfolio from './portfolio';
 // import Clients from './clients';
-// import NpmPackages from './npmPackages';
+import Portfolio from './portfolio';
+import NpmPackages from './npmPackages';
 // import Contact from './contact';
 
 // Dynamically import heavy components
@@ -26,9 +26,7 @@ const Resume = dynamic(() => import('./resume'), {
 });
 const Experience = dynamic(() => import('./experience'), { ssr: false });
 const MySkills = dynamic(() => import('./mySkills'), { ssr: false });
-const Portfolio = dynamic(() => import('./portfolio'), { ssr: false });
 const Clients = dynamic(() => import('./clients'), { ssr: false });
-const NpmPackages = dynamic(() => import('./npmPackages'), { ssr: false });
 const Contact = dynamic(() => import('./contact'), { ssr: false });
 const BackToTopButton = dynamic(() => import('./backToTopButton'), { ssr: false });
 const Header = () => {
