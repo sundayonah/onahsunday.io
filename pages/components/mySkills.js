@@ -15,7 +15,7 @@ const MySkills = () => {
 
    return (
       <>
-         <section className="skill" data-aos="fade-up">
+         <section className="skill" >
             <header>
                <h2
                   className="h2 article-title"
@@ -27,7 +27,7 @@ const MySkills = () => {
             </header>
             <hr className="hr" />
 
-            <ul className="skills-list content-card" >
+            <ul className="skills-list content-card" data-aos="fade-up">
                <div className="myTechnology">
                   <li className="skills-item">
                      {/* FRONT-END */}

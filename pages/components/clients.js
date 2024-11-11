@@ -17,7 +17,6 @@ const Clients = () => {
       AOS.init({ duration: 800 });
    }, []);
 
-
    return (
       <>
          <section className="clients" data-aos="fade-up">

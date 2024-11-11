@@ -8,12 +8,12 @@ import 'aos/dist/aos.css';
 const Portfolio = () => {
    const { projects, loading, error } = useProjects();
 
-
-
    useEffect(() => {
       AOS.init({ duration: 800 });
    }, []);
 
+
+   console.log("projects", projects)
 
 
    if (loading) return <div>Loading...</div>;
@@ -21,7 +21,7 @@ const Portfolio = () => {
 
    return (
       <>
-         <div className="top-space" id="portfolio" data-aos="fade-up">
+         <div className="top-space" id="portfolio" >
             <header>
                <h2
                   className="h2 article-title"
@@ -34,7 +34,7 @@ const Portfolio = () => {
             {/* <div className="separator" /> */}
             <hr className="hr" />
 
-            <section className="projects" >
+            <section className="projects" data-aos="fade-up">
                {/* <div className="filter-select-box">
                   <ul className="select-list">
                      <li className="select-item">
