@@ -4,19 +4,33 @@ import { Button, Modal } from 'antd';
 import { usePackages } from '../../hooks/usePackages';
 import { useProjects } from '../../hooks/useProjects';
 
-import BackToTopButton from './backToTopButton';
+// import BackToTopButton from './backToTopButton';
 
 import Img1 from '../images/my-avatar.png';
 import Img2 from '../images/icon-design.svg';
 import Img3 from '../images/icon-dev.svg';
+import dynamic from 'next/dynamic';
 
-import Resume from './resume';
-import Experience from './experience';
-import MySkills from './mySkills';
-import Portfolio from './portfolio';
-import Clients from './clients';
-import NpmPackages from './npmPackages';
-import Contact from './contact';
+// import Resume from './resume';
+// import Experience from './experience';
+// import MySkills from './mySkills';
+// import Portfolio from './portfolio';
+// import Clients from './clients';
+// import NpmPackages from './npmPackages';
+// import Contact from './contact';
+
+// Dynamically import heavy components
+const Resume = dynamic(() => import('./resume'), { 
+//   loading: () => <div>Loading...</div>,
+  ssr: false 
+});
+const Experience = dynamic(() => import('./experience'), { ssr: false });
+const MySkills = dynamic(() => import('./mySkills'), { ssr: false });
+const Portfolio = dynamic(() => import('./portfolio'), { ssr: false });
+const Clients = dynamic(() => import('./clients'), { ssr: false });
+const NpmPackages = dynamic(() => import('./npmPackages'), { ssr: false });
+const Contact = dynamic(() => import('./contact'), { ssr: false });
+const BackToTopButton = dynamic(() => import('./backToTopButton'), { ssr: false });
 const Header = () => {
    const [active, setActive] = useState(false);
    const [darkTheme, setDarkTheme] = useState(false);

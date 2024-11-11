@@ -1,19 +1,16 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 
-const NpmPackages = ({ npmPackages }) => {
-   // const npmPackages = [
-   //    {
-   //       id: '1',
-   //       name: 'paginationah',
-   //       description:
-   //          'A simple, efficient TypeScript pagination utility for handling pagination logic in your applications.',
-   //       npmUrl: 'https://www.npmjs.com/package/paginationah',
-   //       githubUrl: 'https://github.com/onah/paginationah',
-   //    },
+interface PackageItem {
+id: string;
+name: string;
+description: string;
+npmUrl: string;
+stacks?: string[];
+}
 
-   //    // Add more packages here if needed
-   // ];
+const NpmPackages = ({ npmPackages = [] }: {npmPackages:PackageItem[]}) => {
+ 
 
    return (
       <section className="py-8">
@@ -23,7 +20,7 @@ const NpmPackages = ({ npmPackages }) => {
          <hr className="hr" />
 
          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {npmPackages.map((pkg) => (
+            {npmPackages.map((pkg: PackageItem) => (
                <div
                   key={pkg.id}
                   className="bg-gradient-to-br from-[##212123] p-6 rounded-lg shadow-lg"
@@ -34,11 +31,13 @@ const NpmPackages = ({ npmPackages }) => {
                   <p className="mt-4 timeline-text  text-gray-400">
                      {pkg.description}
                   </p>
-                   <ul className="project-stacks">
-                           {pkg.stacks.map((stack, index) => (
-                              <li key={index}>{stack}</li>
-                           ))}
-                        </ul>
+                   {pkg.stacks && pkg.stacks.length > 0 && (
+                     <ul className="project-stacks">
+                        {pkg.stacks.map((stack, index) => (
+                           <li key={index}>{stack}</li>
+                        ))}
+                     </ul>
+                  )}
                   <div className="mt-6 flex space-x-4">
                      <a
                         href={pkg.npmUrl}
