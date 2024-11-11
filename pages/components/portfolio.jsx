@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { useProjects } from '../../hooks/useProjects';
 import AOS from 'aos';
@@ -21,7 +21,7 @@ const Portfolio = () => {
 
    return (
       <>
-         <div className="top-space" id="portfolio">
+         <div className="top-space" id="portfolio" data-aos="fade-up">
             <header>
                <h2
                   className="h2 article-title"
@@ -34,7 +34,7 @@ const Portfolio = () => {
             {/* <div className="separator" /> */}
             <hr className="hr" />
 
-            <section className="projects" data-aos="fade-up">
+            <section className="projects" >
                {/* <div className="filter-select-box">
                   <ul className="select-list">
                      <li className="select-item">

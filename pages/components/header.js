@@ -91,7 +91,7 @@ const Header = () => {
          <main>
             {/* - #SIDEBAR */}
 
-            <aside className={`sidebar ${active ? 'active' : ''}`} data-sidebar>
+            <aside className={`sidebar ${active ? 'active' : ''}`} data-sidebar data-aos="fade-up">
                <div className="sidebar-info">
                   <figure className="avatar-box">
                      <Image

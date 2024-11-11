@@ -27,7 +27,7 @@ const MySkills = () => {
             </header>
             <hr className="hr" />
 
-            <ul className="skills-list content-card">
+            <ul className="skills-list content-card" >
                <div className="myTechnology">
                   <li className="skills-item">
                      {/* FRONT-END */}
