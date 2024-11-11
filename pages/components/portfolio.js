@@ -1,15 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Image from 'next/image';
 
-import { useProjects } from '../../hooks/useProjects';
+import { getProjects } from '../../actions/actions';
 
 const Portfolio = () => {
-   const { projects, loading, error } = useProjects();
-   // console.log(projects, 'projects in header');
+   // const { projects, loading, error } = useProjects();
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-   if (loading) return <div>Loading...</div>;
-   if (error) return <div>Error: {error}</div>;
-   // console.log(projects);
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        setLoading(true);
+        const data = await getProjects();
+        setProjects(data);
+      } catch (err) {
+        console.error('Error:', err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-[400px]">
+        <div className="text-xl">Loading...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex items-center justify-center min-h-[400px] text-red-500">
+        <div>Error: {error}</div>
+      </div>
+    );
+  }
 
    return (
       <>

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Button, Modal } from 'antd';
 import { usePackages } from '../../hooks/usePackages';
-import { useProjects } from '../../hooks/useProjects';
 
 // import BackToTopButton from './backToTopButton';
 
