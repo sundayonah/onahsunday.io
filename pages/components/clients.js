@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Img1 from '../images/my-avatar.png';
 import clt1 from '../images/bida-logo.png';
@@ -8,17 +8,25 @@ import clt4 from '../images/monie.png';
 import clt5 from '../images/shibase.png';
 import clt6 from '../images/wogaaLogo.png';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Clients = () => {
+
+   useEffect(() => {
+      AOS.init({ duration: 800 });
+   }, []);
+
+
    return (
       <>
-         <section className="clients">
+         <section className="clients" data-aos="fade-up">
             <h3 className="h3 clients-title" title="Clients" name="Clients">
                Clients
             </h3>
 
             <ul className="clients-list has-scrollbar">
-                <li className="clients-item">
+               <li className="clients-item">
                   <a href="https://www.wogaa.org/" target="_blank">
                      <Image
                         src={clt6}
@@ -28,7 +36,7 @@ const Clients = () => {
                      />
                   </a>
                </li>
-                    <li className="clients-item">
+               <li className="clients-item">
                   <a href="https://shibase-inu.vercel.app/" target="_blank">
                      <Image
                         src={clt5}

@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/components/portfolio.jsx"  ],
+, "pages/components/portfolio.jsx", "*.svg"  ],
   "exclude": [
     "node_modules"
   ]

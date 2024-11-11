@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useProjects } from '../../hooks/useProjects';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Portfolio = () => {
    const { projects, loading, error } = useProjects();
 
-   
+
+
+   useEffect(() => {
+      AOS.init({ duration: 800 });
+   }, []);
+
+
+
    if (loading) return <div>Loading...</div>;
    if (error) return <div>Error: {error}</div>;
 
@@ -25,8 +34,8 @@ const Portfolio = () => {
             {/* <div className="separator" /> */}
             <hr className="hr" />
 
-            <section className="projects">
-               <div className="filter-select-box">
+            <section className="projects" data-aos="fade-up">
+               {/* <div className="filter-select-box">
                   <ul className="select-list">
                      <li className="select-item">
                         <button data-select-item="">All</button>
@@ -41,7 +50,7 @@ const Portfolio = () => {
                         <button data-select-item="">Web development</button>
                      </li>
                   </ul>
-               </div>
+               </div> */}
                <ul className="project-list">
                   {projects.map((p) => (
                      <li

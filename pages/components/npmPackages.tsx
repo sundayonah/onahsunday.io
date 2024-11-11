@@ -1,7 +1,10 @@
-import React from 'react';
+import React,  { useEffect } from 'react';
 import 'tailwindcss/tailwind.css';
 import { usePackages } from '../../hooks/usePackages';
 import { PackageItem } from '../../types/types';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -9,6 +12,10 @@ const NpmPackages = () => {
    
    const { npmPackages, loading, error } = usePackages();
 
+   useEffect(() => {
+      AOS.init({ duration: 800 });
+   }, []);
+   
    if (loading) return <div>Loading...</div>;
    if (error) return <div>Error: {error}</div>;
  
@@ -20,7 +27,7 @@ const NpmPackages = () => {
          </h2>
          <hr className="hr" />
 
-         <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+         <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto" data-aos="fade-up">
             {npmPackages.map((pkg: PackageItem) => (
                <div
                   key={pkg.id}

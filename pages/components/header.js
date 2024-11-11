@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import { Button, Modal } from 'antd';
 import Img1 from '../images/my-avatar.png';
@@ -10,10 +10,14 @@ import dynamic from 'next/dynamic';
 import Portfolio from './portfolio';
 import NpmPackages from './npmPackages';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 // Dynamically import heavy components
-const Resume = dynamic(() => import('./resume'), { 
-//   loading: () => <div>Loading...</div>,
-  ssr: false 
+const Resume = dynamic(() => import('./resume'), {
+   //   loading: () => <div>Loading...</div>,
+   ssr: false
 });
 const Experience = dynamic(() => import('./experience'), { ssr: false });
 const MySkills = dynamic(() => import('./mySkills'), { ssr: false });
@@ -21,6 +25,7 @@ const Clients = dynamic(() => import('./clients'), { ssr: false });
 const Contact = dynamic(() => import('./contact'), { ssr: false });
 const BackToTopButton = dynamic(() => import('./backToTopButton'), { ssr: false });
 const Header = () => {
+   const serviceItemsRef = useRef([]);
    const [active, setActive] = useState(false);
    const [darkTheme, setDarkTheme] = useState(false);
    const [visible, setVisible] = useState(false);
@@ -39,6 +44,37 @@ const Header = () => {
    var peace = '🙋';
 
 
+
+
+   // useEffect(() => {
+   //    const observer = new IntersectionObserver(
+   //       (entries) => {
+   //          entries.forEach((entry) => {
+   //             if (entry.isIntersecting) {
+   //                entry.target.classList.add('visible');
+   //             }
+   //          });
+   //       },
+   //       { threshold: 0.5 }
+   //    );
+
+   //    serviceItemsRef.current.forEach((item) => {
+   //       if (item) observer.observe(item);
+   //    });
+
+   //    return () => {
+   //       serviceItemsRef.current.forEach((item) => {
+   //          if (item) observer.unobserve(item);
+   //       });
+   //    };
+   // }, []);
+
+   useEffect(() => {
+      AOS.init({ duration: 800 });
+   }, []);
+
+
+
    return (
       <div className="eneyi">
          <Modal
@@ -46,7 +82,7 @@ const Header = () => {
             footer={null}
             onCancel={() => setVisible(false)}
             title="Notice"
-            // set background color here
+         // set background color here
          >
             <div className="modalContent">
                <p>We will be adding toggle mode soon {peace}.</p>
@@ -69,7 +105,7 @@ const Header = () => {
                      <h1 className="name" title="Onah Sunday">
                         Onah Sunday
                      </h1>
-                     <p className="title">Front-End | Web3 Int.</p>
+                     <p className="title">Frontend | Web3 Int.</p>
                   </div>
                   <button
                      className="info_more-btn"
@@ -184,7 +220,7 @@ const Header = () => {
                   <div className="separator" />
                   <section className="about-text">
                      <p>
-                        As a Front-End / web3 Developer, I possess a great love
+                        As a Frontend / web3 Developer, I possess a great love
                         for coding and have gained more than a two years of
                         experience. I have fully immersed myself in web
                         development and web3, and I am continuously seeking new
@@ -196,40 +232,31 @@ const Header = () => {
                   </section>
 
                   {/*service*/}
+
                   <section className="service">
-                     <h3 className="h3 service-title">What i am doing!</h3>
+                     <h3 className="h3 service-title">What I am doing!</h3>
                      <ul className="service-list">
-                        <li className="service-item">
+                        <li className="service-item" data-aos="fade-up">
                            <div className="service-icon-box">
                               <Image src={Img2} alt="design icon" width={40} />
                            </div>
                            <div className="service-content-box">
-                              <h4 className="h4 service-item-title">
-                                 Front-End Developer
-                              </h4>
+                              <h4 className="h4 service-item-title">Frontend Engineer</h4>
                               <p className="service-item-text">
-                                 The highest quality and most contemporary
-                                 design crafted with professional expertise.
+                                 The highest quality and most contemporary design crafted with
+                                 professional expertise.
                               </p>
                            </div>
                         </li>
-                        <li className="service-item">
+                        <li className="service-item" data-aos="fade-up" data-aos-delay="100">
                            <div className="service-icon-box">
-                              <Image
-                                 src={Img3}
-                                 alt="Web development icon"
-                                 width={40}
-                              />
+                              <Image src={Img3} alt="Web development icon" width={40} />
                            </div>
                            <div className="service-content-box">
-                              <h4 className="h4 service-item-title">
-                                 Web3 Integration
-                              </h4>
+                              <h4 className="h4 service-item-title">Web3 Integration</h4>
                               <p className="service-item-text">
-                                 I specializes in integrating decentralized
-                                 applications {`(dApp)`}, using blockchain
-                                 technologies and protocols.{' '}
-                                 {`< Ethereum, Solana />`}
+                                 I specialize in integrating decentralized applications (dApp)
+                                 using blockchain technologies.
                               </p>
                            </div>
                         </li>
@@ -242,7 +269,7 @@ const Header = () => {
 
                   <Resume />
 
-                  <Portfolio  />
+                  <Portfolio />
 
                   <NpmPackages />
 
