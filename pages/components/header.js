@@ -1,22 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Button, Modal } from 'antd';
-import { usePackages } from '../../hooks/usePackages';
-
-// import BackToTopButton from './backToTopButton';
-
 import Img1 from '../images/my-avatar.png';
 import Img2 from '../images/icon-design.svg';
 import Img3 from '../images/icon-dev.svg';
 import dynamic from 'next/dynamic';
 
-// import Resume from './resume';
-// import Experience from './experience';
-// import MySkills from './mySkills';
-// import Clients from './clients';
+
 import Portfolio from './portfolio';
 import NpmPackages from './npmPackages';
-// import Contact from './contact';
 
 // Dynamically import heavy components
 const Resume = dynamic(() => import('./resume'), { 
@@ -45,8 +37,6 @@ const Header = () => {
       setVisible(true);
    };
    var peace = '🙋';
-
-   const { npmPackages } = usePackages();
 
 
    return (
@@ -254,7 +244,7 @@ const Header = () => {
 
                   <Portfolio  />
 
-                  <NpmPackages npmPackages={npmPackages} />
+                  <NpmPackages />
 
                   <MySkills />
 

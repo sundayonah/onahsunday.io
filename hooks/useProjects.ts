@@ -1,20 +1,20 @@
+// useProjects.js
 import { useState, useEffect } from 'react';
-import { getPackages } from '../actions/actions';
+import { getProjects } from '../actions/actions';
 
-export const usePackages = () => {
-    const [npmPackages, setNpmPackages] = useState([]);
-
+export const useProjects = () => {
+    const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         async function fetchData() {
             try {
-                const fetchedPackages = await getPackages();
-                if (!fetchedPackages) {
+                const fetchedProjects = await getProjects();
+                if (!fetchedProjects) {
                     throw new Error('No projects data received');
                 }
-                setNpmPackages(fetchedPackages);
+                setProjects(fetchedProjects);
             } catch (err) {
                 console.error('Error fetching projects:', err);
                 setError(err.message || 'An unknown error occurred');
@@ -26,5 +26,5 @@ export const usePackages = () => {
         fetchData();
     }, []);
 
-    return { npmPackages, loading, error };
+    return { projects, loading, error };
 };

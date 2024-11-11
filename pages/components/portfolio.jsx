@@ -1,46 +1,14 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
+import { useProjects } from '../../hooks/useProjects';
 
-import { getProjects } from '../../actions/actions';
 
 const Portfolio = () => {
-   // const { projects, loading, error } = useProjects();
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+   const { projects, loading, error } = useProjects();
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        setLoading(true);
-        const data = await getProjects();
-        setProjects(data);
-      } catch (err) {
-        console.error('Error:', err);
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProjects();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px]">
-        <div className="text-xl">Loading...</div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px] text-red-500">
-        <div>Error: {error}</div>
-      </div>
-    );
-  }
+   
+   if (loading) return <div>Loading...</div>;
+   if (error) return <div>Error: {error}</div>;
 
    return (
       <>
@@ -49,7 +17,7 @@ const Portfolio = () => {
                <h2
                   className="h2 article-title"
                   title="Portfolio"
-                  name="Portfolio"
+                  // name="Portfolio"
                >
                   Portfolio
                </h2>
@@ -75,34 +43,34 @@ const Portfolio = () => {
                   </ul>
                </div>
                <ul className="project-list">
-                  {projects.map((project) => (
+                  {projects.map((p) => (
                      <li
-                        key={project.id}
+                        key={p.id}
                         className="project-item active"
                         data-filter-item=""
                         data-category="web design"
                      >
-                        <a href={project.link} target="_blank" rel="noreferrer">
+                        <a href={p.link} target="_blank" rel="noreferrer">
                            <figure className="project-img">
                               <div className="project-item-icon-box">
                                  <ion-icon name="eye-outline" />
                               </div>
                               <Image
-                                 src={project.imageUrl}
-                                 alt={project.name}
+                                 src={p.imageUrl}
+                                 alt={p.name}
                                  width={1000}
                                  height={150}
                                  className=""
                                  loading="lazy"
                               />
                            </figure>
-                           <h3 className="project-title">{project.name}</h3>
+                           <h3 className="project-title">{p.name}</h3>
                            <span className="project-category">
-                              {project.description}
+                              {p.description}
                            </span>
                         </a>
                         <ul className="project-stacks">
-                           {project.stacks.map((stack, index) => (
+                           {p.stacks.map((stack, index) => (
                               <li key={index}>{stack}</li>
                            ))}
                         </ul>

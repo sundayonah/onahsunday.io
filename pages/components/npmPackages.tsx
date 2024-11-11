@@ -1,15 +1,16 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
+import { usePackages } from '../../hooks/usePackages';
+import { PackageItem } from '../../types/types';
 
-interface PackageItem {
-id: string;
-name: string;
-description: string;
-npmUrl: string;
-stacks?: string[];
-}
 
-const NpmPackages = ({ npmPackages = [] }: {npmPackages:PackageItem[]}) => {
+
+const NpmPackages = () => {
+   
+   const { npmPackages, loading, error } = usePackages();
+
+   if (loading) return <div>Loading...</div>;
+   if (error) return <div>Error: {error}</div>;
  
 
    return (
