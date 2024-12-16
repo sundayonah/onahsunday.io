@@ -23,6 +23,7 @@ const Experience = dynamic(() => import('./experience'), { ssr: false });
 const MySkills = dynamic(() => import('./mySkills'), { ssr: false });
 const Clients = dynamic(() => import('./clients'), { ssr: false });
 const Contact = dynamic(() => import('./contact'), { ssr: false });
+const Research = dynamic(() => import('./research'), { ssr: false });
 const BackToTopButton = dynamic(() => import('./backToTopButton'), { ssr: false });
 const Header = () => {
    const serviceItemsRef = useRef([]);
@@ -217,7 +218,7 @@ const Header = () => {
                   <div className="separator" />
                   <section className="about-text">
                      <p>
-                        As a Frontend / web3 Developer, I possess a great love
+                        As a Full stack software Engineer, I possess a great love
                         for coding and have gained more than a two years of
                         experience. I have fully immersed myself in web
                         development and web3, and I am continuously seeking new
@@ -271,6 +272,8 @@ const Header = () => {
                   <NpmPackages />
 
                   <MySkills />
+
+                  <Research />
 
                   <Contact />
                </article>

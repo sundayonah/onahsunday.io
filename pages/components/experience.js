@@ -33,7 +33,7 @@ const Experience = () => {
                   </h4>
                   <span>November 2024 — Present</span>
                   <p className="timeline-text">
-                     Paycrest, a platform transforming cross-border payments with seamless cryptocurrency-to-fiat and fiat-to-cryptocurrency exchanges. Designed and implemented core mechanisms for automated liquidity aggregation and management, ensuring efficient, scalable, and user-friendly payment processes while advancing financial inclusion in underserved global markets. working as:
+                     Paycrest, a platform transforming cross-border payments with seamless cryptocurrency-to-fiat and fiat-to-cryptocurrency exchanges. Designed and implemented core mechanisms for automated liquidity aggregation and management, ensuring efficient, scalable, and user-friendly payment processes while advancing financial inclusion in underserved global markets.
                   </p>
                   <p className="timeline-text paragraph-dot">
                      Implemented Centiiv Payment Service Provider (PSP) with test.
@@ -69,9 +69,6 @@ const Experience = () => {
                   </p>
                   <p className="timeline-text paragraph-dot">
                      Web3 Integration.
-                  </p>
-                  <p className="timeline-text paragraph-dot">
-                     Integrating APIs with frontend.
                   </p>
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
