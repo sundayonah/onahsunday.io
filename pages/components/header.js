@@ -73,8 +73,6 @@ const Header = () => {
       AOS.init({ duration: 800 });
    }, []);
 
-
-
    return (
       <div className="eneyi">
          <Modal
@@ -90,8 +88,7 @@ const Header = () => {
          </Modal>
          <main>
             {/* - #SIDEBAR */}
-
-            <aside className={`sidebar ${active ? 'active' : ''}`} data-sidebar data-aos="fade-up">
+            <aside className={`sidebar ${active ? 'active' : ''}`}>
                <div className="sidebar-info">
                   <figure className="avatar-box">
                      <Image
@@ -105,7 +102,7 @@ const Header = () => {
                      <h1 className="name" title="Onah Sunday">
                         Onah Sunday
                      </h1>
-                     <p className="title">Frontend | Web3 Int.</p>
+                     <p className="title">Full Stack | Web3 Int.</p>
                   </div>
                   <button
                      className="info_more-btn"
@@ -241,7 +238,7 @@ const Header = () => {
                               <Image src={Img2} alt="design icon" width={40} />
                            </div>
                            <div className="service-content-box">
-                              <h4 className="h4 service-item-title">Frontend Engineer</h4>
+                              <h4 className="h4 service-item-title">Full Stack Software Engineer </h4>
                               <p className="service-item-text">
                                  The highest quality and most contemporary design crafted with
                                  professional expertise.

@@ -27,13 +27,38 @@ const Experience = () => {
             </div>
             <ol className="timeline-list">
 
+               <li className="timeline-item" data-aos="fade-up">
+                  <h4 className="h4 timeline-item-title">
+                     Full Stack Software Engineer @Paycrest, Inc
+                  </h4>
+                  <span>November 2024 — Present</span>
+                  <p className="timeline-text">
+                     Paycrest, a platform transforming cross-border payments with seamless cryptocurrency-to-fiat and fiat-to-cryptocurrency exchanges. Designed and implemented core mechanisms for automated liquidity aggregation and management, ensuring efficient, scalable, and user-friendly payment processes while advancing financial inclusion in underserved global markets. working as:
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Implemented Centiiv Payment Service Provider (PSP) with test.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Implemented Flutterwave Multi-Currency Payment Provider Integration with test.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Implemented HoneyCoin Payment Service Provider (PSP) with test.
+                  </p>
+
+                  <h4 className="h4 timeline-item-title">Skills </h4>
+                  <div className="techStack">
+                     <span className="timeline-text">Go</span>
+
+                  </div>
+               </li>
+
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
                      Web3 Engineer @GOWFO
                   </h4>
                   <span>February 2024 — Present</span>
-                  <p className="timeline-text paragraph-dot">
+                  <p className="timeline-text">
                      WFO is an extreme sports network on a mission to help fans,
                      creators, and athletes of extreme sports collaborate, widen
                      their audience, and monetize their content. working as:
@@ -65,7 +90,7 @@ const Experience = () => {
                      Full Stack Developer @wogaa
                   </h4>
                   <span>July 2024 — September 2024</span>
-                  <p className="timeline-text paragraph-dot">
+                  <p className="timeline-text">
                      Word of God Abundantly Assembly (WOGA) is a church with a
                      mission to inspire and uplift lives through the guiding
                      principles of the Word of God. Their focus is on empowering
