@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   staticPageGenerationTimeout: 180,  // Increase timeout to 180 seconds
   images: {
-         domains: ['github.com'],
+    domains: ['github.com'],
 
   },
   // Reduce the number of static pages generated concurrently
