@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import 'tailwindcss/tailwind.css';
 import { usePackages } from '../../hooks/usePackages';
 import { PackageItem } from '../../types/types';
-import { NpmPackagesSkeleton } from "./loading"
+import { NpmPackagesSkeleton } from "../../loading/loading"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

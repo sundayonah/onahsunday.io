@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useProjects } from '../../hooks/useProjects';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { PortfolioSkeleton } from './loading';
+import { PortfolioSkeleton } from '../../loading/loading';
 
 const Portfolio = () => {
    const { projects, loading, error } = useProjects();
