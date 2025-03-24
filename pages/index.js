@@ -51,7 +51,7 @@ export default function Home() {
                }}
             >
                <p>
-                  &copy; {currentYear} xhunTeq. {peace} Jesus is Lord.
+                  &copy; {currentYear} onah. {peace}
                </p>
             </div>
          </div>
