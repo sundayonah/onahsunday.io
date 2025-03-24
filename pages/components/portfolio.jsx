@@ -8,6 +8,8 @@ import { PortfolioSkeleton } from '../../loading/loading';
 const Portfolio = () => {
    const { projects, loading, error } = useProjects();
 
+   console.log(projects, "projects from portfolio");
+
    useEffect(() => {
       AOS.init({ duration: 800 });
    }, []);
@@ -33,25 +35,25 @@ const Portfolio = () => {
                      data-filter-item=""
                      data-category="web design"
                   >
-                     <a href={p.link} target="_blank" rel="noreferrer">
+                     <a href={p.project_data.link} target="_blank" rel="noreferrer">
                         <figure className="project-img">
                            <div className="project-item-icon-box">
                               <ion-icon name="eye-outline" />
                            </div>
                            <Image
-                              src={p.imageUrl}
-                              alt={p.name}
+                              src={p.project_data.imageUrl}
+                              alt={p.project_data.name}
                               width={1000}
                               height={150}
                               className=""
                               loading="lazy"
                            />
                         </figure>
-                        <h3 className="project-title">{p.name}</h3>
-                        <span className="project-category">{p.description}</span>
+                        <h3 className="project-title">{p.project_data.name}</h3>
+                        <span className="project-category">{p.project_data.description}</span>
                      </a>
                      <ul className="project-stacks">
-                        {p.stacks.map((stack, index) => (
+                        {p.project_data.stacks.map((stack, index) => (
                            <li key={index}>{stack}</li>
                         ))}
                      </ul>
