@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 const NpmPackages = () => {
    const { npmPackages, loading, error } = usePackages();
 
+
    useEffect(() => {
       AOS.init({ duration: 800 });
    }, []);
@@ -25,27 +26,27 @@ const NpmPackages = () => {
          <hr className="hr" />
 
          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto" data-aos="fade-up">
-            {npmPackages.map((pkg: PackageItem) => (
+            {npmPackages.map((pkg) => (
                <div
                   key={pkg.id}
                   className="bg-gradient-to-br from-[#212123] p-6 rounded-lg shadow-lg"
                >
                   <h4 className="h4 skills-title text-xl text-white font-semibold">
-                     {pkg.name}
+                     {pkg.package_data.name}
                   </h4>
                   <p className="mt-4 timeline-text text-gray-400">
-                     {pkg.description}
+                     {pkg.package_data.description}
                   </p>
-                  {pkg.stacks && pkg.stacks.length > 0 && (
+                  {pkg.package_data.stacks && pkg.package_data.stacks.length > 0 && (
                      <ul className="project-stacks">
-                        {pkg.stacks.map((stack, index) => (
+                        {pkg.package_data.stacks.map((stack, index) => (
                            <li key={index}>{stack}</li>
                         ))}
                      </ul>
                   )}
                   <div className="mt-6 flex space-x-4">
                      <a
-                        href={pkg.npmUrl}
+                        href={pkg.package_data.link}  // Changed from npmUrl to link
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline cursor-pointer"

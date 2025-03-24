@@ -8,8 +8,6 @@ import { PortfolioSkeleton } from '../../loading/loading';
 const Portfolio = () => {
    const { projects, loading, error } = useProjects();
 
-   console.log(projects, "projects from portfolio");
-
    useEffect(() => {
       AOS.init({ duration: 800 });
    }, []);
