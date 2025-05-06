@@ -85,7 +85,7 @@
       {
          "id": 7,
          "project_data": {
-            "name": "Deel with me",
+            "name": "Solana Token",
             "image_url": "/images/solana-token.png",
             "link": "https://solana-token-beta.vercel.app",
             "description": "Create, build, deploy Solana token without code",
