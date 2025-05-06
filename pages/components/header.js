@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import { Button, Modal } from 'antd';
-import Img1 from '../images/my-avatar.png';
-import Img2 from '../images/icon-design.svg';
-import Img3 from '../images/icon-dev.svg';
+import Img1 from '../../public/images/my-avatar.png';
+import Img2 from '../../public/images/icon-design.svg';
+import Img3 from '../../public/images/icon-dev.svg';
 import dynamic from 'next/dynamic';
 
 

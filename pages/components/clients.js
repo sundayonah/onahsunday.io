@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
-
-import Img1 from '../images/my-avatar.png';
-import clt1 from '../images/bida-logo.png';
-import clt2 from '../images/autheo.jpg';
-import clt3 from '../images/logo.png';
-import clt4 from '../images/monie.png';
-import clt5 from '../images/shibase.png';
-import clt6 from '../images/wogaaLogo.png';
-import clt7 from '../images/paycrest.png';
+import Img1 from '../../public/images/my-avatar.png';
+import clt1 from '../../public/images/bida-logo.png';
+import clt2 from '../../public/images/autheo.jpg';
+import clt3 from '../../public/images/logo.png';
+import clt4 from '../../public/images/monie.png';
+import clt5 from '../../public/images/shibase.png';
+import clt6 from '../../public/images/wogaaLogo.png';
+import clt7 from '../../public/images/paycrest.png';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

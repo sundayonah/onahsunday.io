@@ -8,6 +8,7 @@ import projectsData from '../../jsonFile/projects.json';
 
 const Portfolio = () => {
    // const { projects, loading, error } = useProjects();
+   const projects = projectsData.projects;
 
    useEffect(() => {
       AOS.init({ duration: 800 });
@@ -27,7 +28,7 @@ const Portfolio = () => {
 
          <section className="projects" data-aos="fade-up">
             <ul className="project-list">
-               {projectsData.map((p) => (
+               {projects.map((p) => (
                   <li
                      key={p.id}
                      className="project-item active"
@@ -44,7 +45,7 @@ const Portfolio = () => {
                               <ion-icon name="eye-outline" />
                            </div>
                            <Image
-                              src={p.project_data.imageUrl}
+                              src={p.project_data.image_url}
                               alt={p.project_data.name}
                               width={1000}
                               height={150}

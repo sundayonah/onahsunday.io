@@ -1,88 +1,105 @@
-[
-   {
-      "id": 1,
-      "project_data": {
-         "name": "Paycrest Inc.",
-         "image_url": "/pages/images/paycrestThumbnail.png",
-         "link": "https://www.paycrest.io",
-         "description": "Paycrest, a platform transforming cross-border payments with seamless cryptocurrency-to-fiat and fiat-to-cryptocurrency exchanges. Designed and implemented core mechanisms for automated liquidity aggregation and management, ensuring efficient, scalable, and user-friendly payment processes while advancing financial inclusion in underserved global markets.",
-         "stacks": [
-            "Go",
-            "TypeScript",
-            "Ent",
-            "Docker",
-            "Gin",
-            "PostgreSQL",
-            "Supabase",
-            "REST API"
-         ]
+{
+   "projects": [
+      {
+         "id": 1,
+         "project_data": {
+            "name": "Paycrest Inc.",
+            "image_url": "/images/paycrestThumbnail.png",
+            "link": "https://www.paycrest.io",
+            "description": "Paycrest, a platform transforming cross-border payments with seamless cryptocurrency-to-fiat and fiat-to-cryptocurrency exchanges. Designed and implemented core mechanisms for automated liquidity aggregation and management, ensuring efficient, scalable, and user-friendly payment processes while advancing financial inclusion in underserved global markets.",
+            "stacks": [
+               "Go",
+               "TypeScript",
+               "Ent",
+               "Docker",
+               "Gin",
+               "PostgreSQL",
+               "Supabase",
+               "REST API"
+            ]
+         }
+      },
+      {
+         "id": 2,
+         "project_data": {
+            "name": "WOGAA",
+            "image_url": "/images/wogaa.png",
+            "link": "https://wogaa.org",
+            "description": "Word of God Abundantly Assembly (WOGA) is a church with a mission to inspire and uplift lives through the guiding principles of the Word of God. Their focus is on empowering individuals to overcome life’s challenges and live triumphantly.",
+            "stacks": [
+               "Next.js",
+               "JavaScript",
+               "Firebase",
+               "TailwindCss",
+               "Zustand"
+            ]
+         }
+      },
+      {
+         "id": 3,
+         "project_data": {
+            "name": "The Kingdom Coin",
+            "image_url": "/images/kingdomimg.png",
+            "link": "https://kingdom-coin.vercel.app/",
+            "description": "The Kingdom Coin project harmoniously merges the capabilities of blockchain technology with a user-focused approach, delivering a comprehensive financial platform that empowers users to seamlessly exchange tokens, engage in fund locking, and securely claim rewards.",
+            "stacks": [
+               "Next.js",
+               "TypeScript",
+               "TailwindCss",
+               "Solidity",
+               "Ethers",
+               "Metamask"
+            ]
+         }
+      },
+      {
+         "id": 4,
+         "project_data": {
+            "name": "Portfolio Website",
+            "image_url": "/images/otoport.png",
+            "link": "https://onahprosper.github.io/",
+            "description": "Blockchain security researcher/Smart Contract Engineer Portfolio",
+            "stacks": ["React", "JavaScript", "CSS"]
+         }
+      },
+      {
+         "id": 5,
+         "project_data": {
+            "name": "Launch Legends LLC",
+            "image_url": "/images/autheo-thumbnail.png",
+            "link": "https://www.autheo.com",
+            "description": "Autheo is pioneering the Integration Era by seamlessly connecting fragmented Web3 ecosystems. As a full-stack Web3 platform, Autheo provides the infrastructure to build, scale, and unify decentralized networks, bridging traditional web-based businesses, Web3, and LLMs.",
+            "stacks": ["Solidity", "TYpescript", "Go"]
+         }
+      },
+      {
+         "id": 6,
+         "project_data": {
+            "name": "Deel with me",
+            "image_url": "/images/deelwithme.png",
+            "link": "https://deel-with-me-landingpage.vercel.app/",
+            "description": "We are a social enterprise, poised to make profit by giving true value to our altruistic users , therefore we make profit optimally with a clear vision towards a greener and circle economy.",
+            "stacks": ["Next.js", "TYpescript", "TailwindCss"]
+         }
+      },
+      {
+         "id": 6,
+         "project_data": {
+            "name": "Deel with me",
+            "image_url": "/images/solana-token.png",
+            "link": "https://solana-token-beta.vercel.app",
+            "description": "Create, build, deploy Solana token without code",
+            "stacks": [
+               "Next.js",
+               "TYpescript",
+               "TailwindCss",
+               "@solana/web3.js",
+               "@solana/spl-token",
+               "Zustand",
+               "daisyui",
+               "axios"
+            ]
+         }
       }
-   },
-   {
-      "id": 2,
-      "project_data": {
-         "name": "WOGAA",
-         "image_url": "/pages/images/wogaa.png",
-         "link": "https://wogaa.org",
-         "description": "Word of God Abundantly Assembly (WOGA) is a church with a mission to inspire and uplift lives through the guiding principles of the Word of God. Their focus is on empowering individuals to overcome life’s challenges and live triumphantly.",
-         "stacks": ["Next.js", "JavaScript", "Firebase", "TailwindCss","Zustand"]
-      }
-   },
-   {
-      "id": 3,
-      "project_data": {
-         "name": "The Kingdom Coin",
-         "image_url": "/pages/images/kingdomimg.png",
-         "link": "https://kingdom-coin.vercel.app/",
-         "description": "The Kingdom Coin project harmoniously merges the capabilities of blockchain technology with a user-focused approach, delivering a comprehensive financial platform that empowers users to seamlessly exchange tokens, engage in fund locking, and securely claim rewards.",
-         "stacks": [
-            "Next.js",
-            "TypeScript",
-            "TailwindCss",
-            "Solidity",
-            "Ethers",
-            "Metamask"
-         ]
-      }
-   },
-   {
-      "id": 4,
-      "project_data": {
-         "name": "Portfolio Website",
-         "image_url": "/pages/images/otoport.png",
-         "link": "https://onahprosper.github.io/",
-         "description": "Blockchain security researcher/Smart Contract Engineer Portfolio",
-         "stacks": ["React", "JavaScript", "CSS"]
-      }
-   },
-   {
-      "id": 5,
-      "project_data": {
-         "name": "Launch Legends LLC",
-         "image_url": "/pages/images/autheo-thumbnail.png",
-         "link": "https://www.autheo.com",
-         "description": "Autheo is pioneering the Integration Era by seamlessly connecting fragmented Web3 ecosystems. As a full-stack Web3 platform, Autheo provides the infrastructure to build, scale, and unify decentralized networks, bridging traditional web-based businesses, Web3, and LLMs.",
-         "stacks": ["Solidity", "TYpescript", "Go"]
-      }
-   },
-   {
-      "id": 6,
-      "project_data": {
-         "name": "Deel with me",
-         "image_url": "/pages/images/deelwithme.png",
-         "link": "https://deel-with-me-landingpage.vercel.app/",
-         "description": "We are a social enterprise, poised to make profit by giving true value to our altruistic users , therefore we make profit optimally with a clear vision towards a greener and circle economy.",
-         "stacks": ["Next.js", "TYpescript", "TailwindCss"]
-      }
-   },
-   {
-      "id": 6,
-      "project_data": {
-         "name": "Deel with me",
-         "image_url": "/pages/images/solana-token.png",
-         "link": "https://solana-token-beta.vercel.app",
-         "description": "Create, build, deploy Solana token without code",
-         "stacks": ["Next.js", "TYpescript", "TailwindCss","@solana/web3.js","@solana/spl-token", "Zustand","daisyui","axios"]
-      }
-   }
-]
+   ]
+}
