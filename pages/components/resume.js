@@ -17,8 +17,6 @@ const Resume = () => {
    return (
       <>
          <div className="top-space">
-
-
             <section className="timeline" data-aos="fade-up">
                <div className="title-wrapper">
                   <div className="icon-box">

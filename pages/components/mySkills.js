@@ -25,10 +25,8 @@ const MySkills = () => {
                   My skills
                </h2>
             </header>
-            <hr className="hr" />
-
             <ul className="skills-list content-card" data-aos="fade-up">
-               <div className="myTechnology">
+               <div className="myTechnology grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                   <li className="skills-item">
                      {/* FRONT-END */}
                      <h4 className="h4 skills-title">Front-End</h4>
@@ -43,7 +41,7 @@ const MySkills = () => {
                      <p className="timeline-text">wagmi, web3Modal</p>
                      <p className="timeline-text">Git</p>
                   </li>
-                  <hr className="hr" />
+                  {/* <hr className="hr" /> */}
 
                   {/* BACK-END */}
                   <li className="skills-item">
@@ -51,8 +49,10 @@ const MySkills = () => {
                      <p className="timeline-text">Go</p>
                      <p className="timeline-text">Ent - Framework</p>
                      <p className="timeline-text">Postgres</p>
+                     <p className="timeline-text">Sql</p>
                      <p className="timeline-text">mongoDB</p>
                      <p className="timeline-text">firebase</p>
+                     <p className="timeline-text">Supabase</p>
                      <p className="timeline-text">Node.js</p>
                      <p className="timeline-text">Express</p>
                      <p className="timeline-text">Hardhat</p>

@@ -26,8 +26,6 @@ const NpmPackages = () => {
          <h2 className="h2 article-title mt-3" title="Portfolio">
             Npm Packages
          </h2>
-         <hr className="hr" />
-
          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto" data-aos="fade-up">
             {packages.map((pkg) => (
                <div

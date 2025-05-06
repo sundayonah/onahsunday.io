@@ -18,7 +18,6 @@ const Experience = () => {
                   Resume
                </h2>
             </header>
-            <div className="separator" />
             <div className="title-wrapper" data-aos="fade-up">
                <div className="icon-box">
                   <ion-icon name="book-outline" />

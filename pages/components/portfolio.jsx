@@ -24,8 +24,6 @@ const Portfolio = () => {
                Portfolio
             </h2>
          </header>
-         <hr className="hr" />
-
          <section className="projects" data-aos="fade-up">
             <ul className="project-list">
                {projects.map((p) => (
