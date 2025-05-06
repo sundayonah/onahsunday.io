@@ -48,6 +48,13 @@ const Experience = () => {
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
                      <span className="timeline-text">Go</span>
+                     <span className="timeline-text">TypeScript</span>
+                     <span className="timeline-text">Ent</span>
+                     <span className="timeline-text">Docker</span>
+                     <span className="timeline-text">Gin</span>
+                     <span className="timeline-text">PostgreSQL</span>
+                     <span className="timeline-text">Supabase</span>
+                     <span className="timeline-text">REST API</span>
 
                   </div>
                </li>
@@ -114,6 +121,7 @@ const Experience = () => {
                      <span className="timeline-text">TailwindCSS,</span>
                      <span className="timeline-text">Nodemailer,</span>
                      <span className="timeline-text">Firebase,</span>
+                     <span className="timeline-text">Zustand,</span>
                   </div>
                </li>
 
@@ -220,7 +228,6 @@ const Experience = () => {
                      <span className="timeline-text">Antd,</span>
                      <span className="timeline-text">React-Context,</span>
                      <span className="timeline-text">MetaMask,</span>
-                     <span className="timeline-text">TailwindCSS,</span>
                      <span className="timeline-text">HTML/CSS.</span>
                      <span className="timeline-text">Solidity,</span>
                      <span className="timeline-text">Ethers.js,</span>

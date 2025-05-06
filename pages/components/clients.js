@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import Img1 from '../images/my-avatar.png';
 import clt1 from '../images/bida-logo.png';
-import clt2 from '../images/gowfo.png';
+import clt2 from '../images/autheo.jpg';
 import clt3 from '../images/logo.png';
 import clt4 from '../images/monie.png';
 import clt5 from '../images/shibase.png';
@@ -57,7 +57,7 @@ const Clients = () => {
                   </a>
                </li>
                <li className="clients-item">
-                  <a href="https://gowfo.com/" target="_blank">
+                  <a href="https://www.autheo.com" target="_blank">
                      <Image
                         src={clt2}
                         alt="client logo"

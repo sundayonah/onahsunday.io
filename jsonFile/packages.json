@@ -1,0 +1,37 @@
+{
+    "packages": [
+        {
+            "id": 1,
+            "package_data": {
+                "name": "paginationah",
+                "link": "https://www.npmjs.com/package/paginationah",
+                "description": "A simple, type-safe pagination utility library for JavaScript/TypeScript projects, providing calculated pagination metadata based on input parameters.",
+                "stacks": [
+                    "Typescript",
+                    "Jest",
+                    "JavaScript"
+                ]
+            },
+            "created_at": "0001-01-01T00:00:00Z",
+            "updated_at": "0001-01-01T00:00:00Z"
+        },
+        {
+            "id": 2,
+            "package_data": {
+                "name": "Dynamic Form Generator",
+                "link": "https://www.npmjs.com/package/dynamic-form-generator-o",
+                "description": "Dynamic Form Generator is a React-based package for dynamically generating forms using a JSON schema. It integrates form validation using Zod and offers customization options for developers to define their fields, validation rules, and styles. The package comes with default TailwindCSS styling, but this can be easily overridden to match custom design needs.",
+                "stacks": [
+                    "Typescript",
+                    "Jest",
+                    "React",
+                    "Zod",
+                    "@hookform",
+                    "react-hook-form"
+                ]
+            },
+            "created_at": "0001-01-01T00:00:00Z",
+            "updated_at": "0001-01-01T00:00:00Z"
+        }
+    ]
+}
