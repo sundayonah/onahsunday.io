@@ -186,19 +186,458 @@ html {
 
 body {
    background: var(--smoky-black);
+   transition: background-color 0.3s ease;
 }
 
-/* THEMETOGGLE */
-/* Light theme styles */
-.themeToggle {
-   background-color: var(--smoky-black);
-   color: #ffffff;
+/* Default to dark theme */
+body {
+   background: var(--smoky-black);
 }
 
-/* Dark theme styles */
-.themeToggle.dark {
-   background-color: red;
-   color: #fff;
+/* Ensure smooth transitions for all theme changes */
+* {
+   transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease;
+}
+
+/*-----------------------------------*\
+  #THEME TOGGLE
+\*-----------------------------------*/
+
+.theme-toggle-btn {
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 8px;
+   border-radius: 50%;
+   transition: all 0.3s ease;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.theme-toggle-btn:hover {
+   background: rgba(255, 255, 255, 0.1);
+   transform: scale(1.1);
+}
+
+.theme-toggle-track {
+   position: relative;
+   width: 50px;
+   height: 24px;
+   background: var(--onyx);
+   border-radius: 12px;
+   padding: 2px;
+   transition: all 0.3s ease;
+   border: 1px solid var(--jet);
+}
+
+.theme-toggle-thumb {
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   width: 18px;
+   height: 18px;
+   background: var(--orange-yellow-crayola);
+   border-radius: 50%;
+   transition: all 0.3s ease;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-thumb.light {
+   transform: translateX(26px);
+   background: #fbbf24;
+}
+
+.theme-toggle-thumb.dark {
+   transform: translateX(0);
+   background: var(--orange-yellow-crayola);
+}
+
+.theme-icon {
+   font-size: 10px;
+   color: var(--smoky-black);
+   transition: all 0.3s ease;
+}
+
+/* Light theme icon color */
+body.light-theme .theme-icon {
+   color: hsl(0, 0%, 15%);
+}
+
+/*-----------------------------------*\
+  #LIGHT THEME VARIABLES
+\*-----------------------------------*/
+
+body.light-theme {
+   --bg-gradient-onyx: linear-gradient(
+      to bottom right,
+      hsl(0, 0%, 95%) 3%,
+      hsl(0, 0%, 90%) 97%
+   );
+   --bg-gradient-jet: linear-gradient(
+         to bottom right,
+         hsla(0, 0%, 85%, 0.251) 0%,
+         hsla(0, 0%, 80%, 0) 100%
+      ),
+      hsl(0, 0%, 88%);
+   --bg-gradient-yellow-1: linear-gradient(
+      to bottom right,
+      hsl(45, 100%, 71%) 0%,
+      hsla(36, 100%, 69%, 0) 50%
+   );
+   --bg-gradient-yellow-2: linear-gradient(
+         135deg,
+         hsla(45, 100%, 71%, 0.251) 0%,
+         hsla(35, 100%, 68%, 0) 59.86%
+      ),
+      hsl(0, 0%, 88%);
+   --border-gradient-onyx: linear-gradient(
+      to bottom right,
+      hsl(0, 0%, 75%) 0%,
+      hsla(0, 0%, 75%, 0) 50%
+   );
+   --text-gradient-yellow: linear-gradient(
+      to right,
+      hsl(45, 100%, 72%),
+      hsl(35, 100%, 68%)
+   );
+
+   --paragraphdot-bg: linear-gradient(
+      to right,
+      hsl(45, 100%, 32%),
+      hsl(35, 100%, 28%)
+   );
+
+   /* solid */
+   --jet: hsl(0, 0%, 78%);
+   --onyx: hsl(240, 1%, 83%);
+   --eerie-black-1: hsl(0, 0%, 88%);
+   --eerie-black-2: hsl(0, 0%, 85%);
+   --smoky-black: hsl(0, 0%, 92%);
+   --white-1: hsl(0, 0%, 100%);
+   --white-2: hsl(0, 0%, 98%);
+   --orange-yellow-crayola: hsl(45, 100%, 72%);
+   --vegas-gold: hsl(45, 54%, 58%);
+   --light-gray: hsl(0, 0%, 30%);
+   --light-gray-70: hsla(0, 0%, 30%, 0.7);
+   --bittersweet-shimmer: hsl(0, 43%, 51%);
+}
+
+/*-----------------------------------*\
+  #DARK THEME (DEFAULT)
+\*-----------------------------------*/
+
+body.dark-theme {
+   --bg-gradient-onyx: linear-gradient(
+      to bottom right,
+      hsl(240, 1%, 25%) 3%,
+      hsl(0, 0%, 19%) 97%
+   );
+   --bg-gradient-jet: linear-gradient(
+         to bottom right,
+         hsla(240, 1%, 18%, 0.251) 0%,
+         hsla(240, 2%, 11%, 0) 100%
+      ),
+      hsl(240, 2%, 13%);
+   --bg-gradient-yellow-1: linear-gradient(
+      to bottom right,
+      hsl(45, 100%, 71%) 0%,
+      hsla(36, 100%, 69%, 0) 50%
+   );
+   --bg-gradient-yellow-2: linear-gradient(
+         135deg,
+         hsla(45, 100%, 71%, 0.251) 0%,
+         hsla(35, 100%, 68%, 0) 59.86%
+      ),
+      hsl(240, 2%, 13%);
+   --border-gradient-onyx: linear-gradient(
+      to bottom right,
+      hsl(0, 0%, 25%) 0%,
+      hsla(0, 0%, 25%, 0) 50%
+   );
+   --text-gradient-yellow: linear-gradient(
+      to right,
+      hsl(45, 100%, 72%),
+      hsl(35, 100%, 68%)
+   );
+
+   --paragraphdot-bg: linear-gradient(
+      to right,
+      hsl(45, 100%, 32%),
+      hsl(35, 100%, 28%)
+   );
+
+   /* solid */
+   --jet: hsl(0, 0%, 22%);
+   --onyx: hsl(240, 1%, 17%);
+   --eerie-black-1: hsl(240, 2%, 13%);
+   --eerie-black-2: hsl(240, 2%, 12%);
+   --smoky-black: hsl(0, 1%, 16%);
+   --white-1: hsl(0, 0%, 100%);
+   --white-2: hsl(0, 0%, 98%);
+   --orange-yellow-crayola: hsl(45, 100%, 72%);
+   --vegas-gold: hsl(45, 54%, 58%);
+   --light-gray: hsl(0, 0%, 84%);
+   --light-gray-70: hsla(0, 0%, 84%, 0.7);
+   --bittersweet-shimmer: hsl(0, 43%, 51%);
+}
+
+/*-----------------------------------*\
+  #LIGHT THEME TEXT OVERRIDES
+\*-----------------------------------*/
+
+/* Light theme text color overrides for better contrast */
+body.light-theme .h2,
+body.light-theme .h3,
+body.light-theme .h4,
+body.light-theme .h5 {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .article-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .about-text {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .service-item-text {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .project-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .project-category {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .timeline-item-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .timeline-text {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .paragraph-dot-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .skills-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .form-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .form-input {
+   color: hsl(0, 0%, 15%);
+   background: hsl(0, 0%, 95%);
+   /* border: 1px solid hsl(0, 0%, 80%); */
+}
+
+body.light-theme .form-input::placeholder {
+   color: hsl(0, 0%, 45%);
+}
+
+body.light-theme .navbar-link {
+   color: hsl(0, 0%, 15%) !important;
+}
+
+body.light-theme .navbar-link:hover {
+   color: var(--orange-yellow-crayola) !important;
+}
+
+body.light-theme .navbar-link:focus {
+   color: var(--orange-yellow-crayola) !important;
+}
+
+body.light-theme .navbar-link.active {
+   color: var(--orange-yellow-crayola) !important;
+}
+
+body.light-theme .info-content .name {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .info-content .title {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .contact-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .contact-info .contact-link {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .social-link {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .social-link:hover {
+   color: var(--orange-yellow-crayola);
+}
+
+body.light-theme .info_more-btn {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .info_more-btn:hover {
+   color: var(--orange-yellow-crayola);
+}
+
+body.light-theme .info_more-btn span {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .testimonials-item-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .testimonials-text {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .blog-item-title {
+   color: hsl(0, 0%, 15%);
+}
+
+body.light-theme .blog-text {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .blog-meta .blog-category,
+body.light-theme .blog-meta time {
+   color: hsl(0, 0%, 35%);
+}
+
+body.light-theme .clients-item img {
+   filter: brightness(0.8) contrast(1.2);
+}
+
+body.light-theme .project-stacks li {
+   background: hsl(0, 0%, 90%);
+   color: hsl(0, 0%, 25%);
+   /* border: 1px solid hsl(0, 0%, 80%); */
+}
+
+body.light-theme .project-stacks li:hover {
+   background: var(--orange-yellow-crayola);
+   color: hsl(0, 0%, 15%);
+}
+
+/* Light theme modal improvements */
+body.light-theme .ant-modal-content {
+   background-color: hsl(0, 0%, 95%) !important;
+   color: hsl(0, 0%, 15%) !important;
+}
+
+body.light-theme .ant-modal-header {
+   background-color: hsl(0, 0%, 95%) !important;
+}
+
+body.light-theme .ant-modal-title {
+   color: hsl(0, 0%, 15%) !important;
+}
+
+body.light-theme .ant-modal-close-icon {
+   color: hsl(0, 0%, 45%) !important;
+}
+
+body.light-theme .ant-modal-close-icon:hover {
+   color: hsl(0, 0%, 15%) !important;
+}
+
+body.light-theme .modalContent {
+   border-top: 1px solid hsl(0, 0%, 80%);
+   color: hsl(0, 0%, 25%);
+}
+
+/* Light theme scrollbar */
+body.light-theme ::-webkit-scrollbar-thumb {
+   background-color: var(--orange-yellow-crayola);
+}
+
+body.light-theme ::-webkit-scrollbar-track {
+   background-color: hsl(0, 0%, 90%);
+}
+
+/* Light theme notification icon */
+body.light-theme .notification {
+   color: hsl(0, 0%, 15%) !important;
+}
+
+/* Light theme navbar background */
+body.light-theme .navbar {
+   background: hsla(0, 0%, 95%, 0.95) !important;
+   border: 1px solid hsl(0, 0%, 80%) !important;
+   backdrop-filter: blur(10px);
+}
+
+/*-----------------------------------*\
+  #NPM PACKAGES
+\*-----------------------------------*/
+
+.npm-package-card {
+   background: var(--border-gradient-onyx);
+   /* border: 1px solid var(--jet); */
+   position: relative;
+   z-index: 1;
+}
+
+.npm-package-card::before {
+   content: '';
+   position: absolute;
+   inset: 1px;
+   background: var(--bg-gradient-jet);
+   border-radius: inherit;
+   z-index: -1;
+}
+
+.npm-package-link {
+   color: var(--white-2);
+   transition: color 0.3s ease;
+}
+
+.npm-package-link:hover {
+   color: var(--orange-yellow-crayola);
+}
+
+/* Light theme NPM packages */
+body.light-theme .npm-package-card {
+   background: linear-gradient(
+      to bottom right,
+      hsl(0, 0%, 95%) 0%,
+      hsl(0, 0%, 90%) 100%
+   );
+   border: 1px solid hsl(0, 0%, 80%);
+}
+
+body.light-theme .npm-package-card::before {
+   background: linear-gradient(
+         to bottom right,
+         hsla(0, 0%, 85%, 0.251) 0%,
+         hsla(0, 0%, 80%, 0) 100%
+      ),
+      hsl(0, 0%, 88%);
+}
+
+body.light-theme .npm-package-link {
+   color: hsl(0, 0%, 25%);
+}
+
+body.light-theme .npm-package-link:hover {
+   color: var(--orange-yellow-crayola);
 }
 
 /*-----------------------------------*\
@@ -570,6 +1009,20 @@ main {
 
 .navbar-link.active {
    color: rgb(183, 24, 24);
+}
+
+/* Theme toggle in navbar */
+.navbar-item .theme-toggle-btn {
+   margin-left: 10px;
+}
+
+.navbar-item .theme-toggle-track {
+   background: var(--onyx);
+   border: 1px solid var(--jet);
+}
+
+.navbar-item .theme-toggle-btn:hover {
+   background: rgba(255, 255, 255, 0.05);
 }
 
 /* MODAL NOTIFICATION MODAL */
@@ -1292,13 +1745,21 @@ main {
 
 .project-stacks li {
    display: inline-block;
-   background-color: #f0f0f0;
+   background-color: var(--onyx);
+   border: 1px solid var(--jet);
    border-radius: 4px;
-   color: #333;
+   color: var(--white-2);
    font-size: 12px;
    margin-right: 8px;
    padding: 2px 6px;
    text-align: center;
+   transition: all 0.3s ease;
+}
+
+.project-stacks li:hover {
+   background-color: var(--orange-yellow-crayola);
+   color: var(--smoky-black);
+   border-color: var(--orange-yellow-crayola);
 }
 
 /*-----------------------------------*\
@@ -1935,6 +2396,15 @@ textarea.form-input::-webkit-resizer {
       --fs-8: 15px;
    }
 
+   /* Light theme navbar links for medium screens */
+   body.light-theme .navbar-link {
+      color: hsl(0, 0%, 15%) !important;
+   }
+
+   body.light-theme .navbar-link:hover {
+      color: var(--orange-yellow-crayola) !important;
+   }
+
    /**
    * ABOUT
    */
@@ -2072,6 +2542,15 @@ textarea.form-input::-webkit-resizer {
 
    .navbar-link {
       font-weight: var(--fw-500);
+   }
+
+   /* Light theme navbar links for large screens */
+   body.light-theme .navbar-link {
+      color: hsl(0, 0%, 15%) !important;
+   }
+
+   body.light-theme .navbar-link:hover {
+      color: var(--orange-yellow-crayola) !important;
    }
 
    /**
@@ -2253,15 +2732,12 @@ textarea.form-input::-webkit-resizer {
 /***********************************/
 
 .fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+   opacity: 1;
+   transform: translateY(0);
 }
-
-
-

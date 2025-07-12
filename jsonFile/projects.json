@@ -1,5 +1,19 @@
 {
    "projects": [
+       {
+         "id": 1,
+         "project_data": {
+            "name": "Noblocks",
+            "image_url": "/images/noblocks.png",
+            "link": "https://noblocks.xyz/",
+            "description": "Noblocks is an intuitive interface that enables senders to create and execute payment intents",
+            "stacks": [
+               "TypeScript",
+               "Supabase",
+               "REST API"
+            ]
+         }
+      },
       {
          "id": 1,
          "project_data": {

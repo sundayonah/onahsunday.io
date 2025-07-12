@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Contact = () => {
+   return (
 
          <div className="top-space" id="contact">
                      <header>
@@ -30,7 +31,7 @@ const Contact = () => {
                               </li>
                               <li className="social-item">
                                  <a
-                                    href="https://twitter.com/xhunkleph"
+                                    href="https://twitter.com/sunday_onah_"
                                     className="social-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -40,7 +41,7 @@ const Contact = () => {
                               </li>
                               <li className="social-item">
                                  <a
-                                    href="https://www.linkedin.com/in/onah-sunday-0b783921a/"
+                                    href="https://www.linkedin.com/in/onah-sunday"
                                     className="social-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -61,7 +62,8 @@ const Contact = () => {
                            </ul>
                         </div>
                      </section>
-                  </div>
+      </div>
+   )
 }
 
 

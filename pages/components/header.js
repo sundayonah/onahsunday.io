@@ -6,16 +6,16 @@ import Img2 from '../../public/images/icon-design.svg';
 import Img3 from '../../public/images/icon-dev.svg';
 import dynamic from 'next/dynamic';
 
-
 import Portfolio from './portfolio';
 import NpmPackages from './npmPackages';
+import ThemeToggle from './ThemeToggle';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
 // Dynamically import heavy components
-const Resume = dynamic(() => import('./resume'), {
+const Education = dynamic(() => import('./education'), {
    //   loading: () => <div>Loading...</div>,
    ssr: false
 });
@@ -76,17 +76,16 @@ const Header = () => {
 
    return (
       <div className="eneyi">
-         <Modal
+         {/* <Modal
             open={visible}
             footer={null}
             onCancel={() => setVisible(false)}
             title="Notice"
-         // set background color here
          >
             <div className="modalContent">
-               <p>We will be adding toggle mode soon {peace}.</p>
+               <p>Theme toggle is now available! Click the toggle button in the navbar to switch between dark and light themes {peace}.</p>
             </div>
-         </Modal>
+         </Modal> */}
          <main>
             {/* - #SIDEBAR */}
             <aside className={`sidebar ${active ? 'active' : ''}`}>
@@ -172,8 +171,8 @@ const Header = () => {
                      </li>
                      <li className="navbar-item">
                         <button data-nav-link>
-                           <a className="navbar-link" href="#resume">
-                              Resume
+                           <a className="navbar-link" href="#education">
+                              Education
                            </a>
                         </button>
                      </li>
@@ -191,16 +190,18 @@ const Header = () => {
                            </a>
                         </button>
                      </li>
-                     <li className="navbar-item">
+                     {/* <li className="navbar-item">
                         <button onClick={showModal}>
                            <ion-icon
                               className="notification"
                               name="notifications-outline"
-                              style={{ fontSize: '1.5rem', color: 'white' }}
+                              style={{ fontSize: '1.5rem' }}
                            ></ion-icon>
                         </button>
+                     </li> */}
+                     <li className="navbar-item">
+                        <ThemeToggle />
                      </li>
-                     <li className="navbar-item"></li>
                   </ul>
                </nav>
 
@@ -265,7 +266,7 @@ const Header = () => {
 
                   <Experience />
 
-                  <Resume />
+                  {/* <Education /> */}
 
                   <Portfolio />
 

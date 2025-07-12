@@ -5,7 +5,7 @@ import 'tailwindcss/tailwind.css';
 // import { NpmPackagesSkeleton } from "../../loading/loading"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import packagesData from "../../jsonFile/packages.json"
+import packagesData from '../../jsonFile/packages.json';
 
 const NpmPackages = () => {
    // const { npmPackages, loading, error } = usePackages();
@@ -26,31 +26,35 @@ const NpmPackages = () => {
          <h2 className="h2 article-title mt-3" title="Portfolio">
             Npm Packages
          </h2>
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto" data-aos="fade-up">
+         <div
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto"
+            data-aos="fade-up"
+         >
             {packages.map((pkg) => (
                <div
                   key={pkg.id}
-                  className="bg-gradient-to-br from-[#212123] p-6 rounded-lg shadow-lg"
+                  className="npm-package-card p-6 rounded-lg shadow-lg"
                >
-                  <h4 className="h4 skills-title text-xl text-white font-semibold">
+                  <h4 className="h4 skills-title text-xl font-semibold">
                      {pkg.package_data.name}
                   </h4>
-                  <p className="mt-4 timeline-text text-gray-400">
+                  <p className="mt-4 timeline-text">
                      {pkg.package_data.description}
                   </p>
-                  {pkg.package_data.stacks && pkg.package_data.stacks.length > 0 && (
-                     <ul className="project-stacks">
-                        {pkg.package_data.stacks.map((stack, index) => (
-                           <li key={index}>{stack}</li>
-                        ))}
-                     </ul>
-                  )}
+                  {pkg.package_data.stacks &&
+                     pkg.package_data.stacks.length > 0 && (
+                        <ul className="project-stacks">
+                           {pkg.package_data.stacks.map((stack, index) => (
+                              <li key={index}>{stack}</li>
+                           ))}
+                        </ul>
+                     )}
                   <div className="mt-6 flex space-x-4">
                      <a
-                        href={pkg.package_data.link}  // Changed from npmUrl to link
+                        href={pkg.package_data.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline cursor-pointer"
+                        className="npm-package-link hover:underline cursor-pointer"
                      >
                         View on npm
                      </a>
