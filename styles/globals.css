@@ -577,6 +577,23 @@ body.light-theme .notification {
    color: hsl(0, 0%, 15%) !important;
 }
 
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer-text {
+   text-align: center;
+   margin-top: -3rem;
+   margin-bottom: 5rem;
+   color: var(--white-2);
+   transition: color 0.3s ease;
+}
+
+/* Light theme footer */
+body.light-theme .footer-text {
+   color: hsl(0, 0%, 15%) !important;
+}
+
 /* Light theme navbar background */
 body.light-theme .navbar {
    background: hsla(0, 0%, 95%, 0.95) !important;

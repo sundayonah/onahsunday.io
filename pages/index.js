@@ -42,14 +42,7 @@ export default function Home() {
          <div>
             <Header />
 
-            <div
-               style={{
-                  textAlign: 'center',
-                  marginTop: '-3rem',
-                  marginBottom: '5rem',
-                  color: '#fff',
-               }}
-            >
+            <div className="footer-text">
                <p>
                   &copy; {currentYear} onah. {peace}
                </p>
