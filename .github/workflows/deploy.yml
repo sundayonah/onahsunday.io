@@ -1,11 +1,11 @@
-name: Deploy to GitHub Pages
+name: Deploy Next.js to GitHub Pages
 
 on:
   push:
     branches: [ main ]
 
 permissions:
-  contents: write  # Add this!
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -16,15 +16,24 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '22'
           
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /onahsunday.io
+          
+      - name: Export static files
+        run: npx next export
+          
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./out
