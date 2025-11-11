@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import { PortfolioSkeleton } from '../../loading/loading';
 import projectsData from '../../jsonFile/projects.json';
+import { getImagePath } from '../../utils/utils';
 
 const Portfolio = () => {
    // const { projects, loading, error } = useProjects();
@@ -43,7 +44,8 @@ const Portfolio = () => {
                               <ion-icon name="eye-outline" />
                            </div>
                            <Image
-                              src={p.project_data.image_url}
+                              // src={p.project_data.image_url}
+                              src={getImagePath(p.project_data.image_url)}
                               alt={p.project_data.name}
                               width={1000}
                               height={150}
