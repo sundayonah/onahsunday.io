@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import { PortfolioSkeleton } from '../../loading/loading';
 import projectsData from '../../jsonFile/projects.json';
-import { getImagePath } from '../../utils/utils';
+import { getImagePath } from '../../hooks/assetPrefix';
 
 const Portfolio = () => {
    // const { projects, loading, error } = useProjects();
