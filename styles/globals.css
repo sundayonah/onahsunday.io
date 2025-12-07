@@ -1168,10 +1168,18 @@ main {
 } */
 
 .techStack {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-   gap: 8px;
-   justify-content: space-between;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0;
+}
+
+.techStack span {
+   margin-right: 8px;
+}
+
+.techStack span:not(:last-child)::after {
+   content: ',';
+   margin-left: 4px;
 }
 
 /* Add a media query for smaller screen sizes */

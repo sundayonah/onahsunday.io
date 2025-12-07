@@ -35,13 +35,34 @@ const Experience = () => {
                      Paycrest, a platform transforming cross-border payments with seamless cryptocurrency-to-fiat and fiat-to-cryptocurrency exchanges. Designed and implemented core mechanisms for automated liquidity aggregation and management, ensuring efficient, scalable, and user-friendly payment processes while advancing financial inclusion in underserved global markets.
                   </p>
                   <p className="timeline-text paragraph-dot">
-                     Implemented Centiiv Payment Service Provider (PSP) with test.
+                     Architected KYC/KYB verification systems with Smile ID integration supporting multiple countries, implementing wallet address migration and automated compliance workflows that streamline user onboarding.
                   </p>
                   <p className="timeline-text paragraph-dot">
-                     Implemented Flutterwave Multi-Currency Payment Provider Integration with test.
+                     Developed high-precision payment processing infrastructure with DECIMAL(20,8) financial calculations and automated notifications, ensuring transaction accuracy and reducing processing errors across the platform.
                   </p>
                   <p className="timeline-text paragraph-dot">
-                     Implemented HoneyCoin Payment Service Provider (PSP) with test.
+                     Expanded multi-currency payment support by integrating multiple fiat currencies with regional institutions, enabling cross-border payment processing and increasing market reach.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Implemented Centiiv, Bellbank, Transfero, Redbiller etc Payment Service Provider.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Engineered RESTful APIs with dual-tiered rate limiting, response caching, and comprehensive validation, improving API performance while protecting against abuse and ensuring data integrity.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Integrated third-party services including Bitget for real-time rate fetching, Slack for operational alerts, and GlitchTip for error monitoring, enhancing system observability and team efficiency.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Developed backend microservices in Golang with PostgreSQL and Redis, implementing clean architecture patterns and optimized database schemas for high-performance, scalable payment processing.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Optimized system performance with strategic caching, improved error handling, and efficient resource allocation, reducing latency and improving overall user experience.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Implemented comprehensive testing infrastructure with unit tests, schema validation, and test isolation, improving code reliability and reducing regression issues in production.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Collaborated across teams to deliver clean, production-ready code spanning both backend infrastructure, Frontend and Figma.
                   </p>
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
@@ -52,9 +73,41 @@ const Experience = () => {
                      <span className="timeline-text">Docker</span>
                      <span className="timeline-text">Gin</span>
                      <span className="timeline-text">PostgreSQL</span>
+                     <span className="timeline-text">Redis</span>
                      <span className="timeline-text">Supabase</span>
                      <span className="timeline-text">REST API</span>
+                  </div>
+               </li>
 
+               <li className="timeline-item" data-aos="fade-up">
+                  <h4 className="h4 timeline-item-title">
+                     Full Stack Software Engineer @Noblocks (Paycrest, Inc)
+                  </h4>
+                  <span>November 2024 — Present</span>
+                  <p className="timeline-text">
+                     Noblocks is an intuitive interface that enables senders to create and execute payment intents.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Integrate GlitchTip for Error Monitoring and Notifications.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Implement User Referral & Earnings Program.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Mixpanel Integration - Data Abstraction Due to Client-Side Reliance.
+                  </p>
+
+                  <h4 className="h4 timeline-item-title">Skills </h4>
+                  <div className="techStack">
+                     <span className="timeline-text">React</span>
+                     <span className="timeline-text">TypeScript</span>
+                     <span className="timeline-text">Supabase</span>
+                     <span className="timeline-text">Tailwind</span>
+                     <span className="timeline-text">Framer-Motion</span>
+                     <span className="timeline-text">Thirdweb</span>
+                     <span className="timeline-text">Tanstack</span>
+                     <span className="timeline-text">Privy</span>
+                     <span className="timeline-text">Mixpanel</span>
                   </div>
                </li>
 
@@ -79,10 +132,10 @@ const Experience = () => {
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
-                     <span className="timeline-text">Solidity,</span>
-                     <span className="timeline-text">React,</span>
-                     <span className="timeline-text">Javascript,</span>
-                     <span className="timeline-text">Next.js,</span>
+                     <span className="timeline-text">Solidity</span>
+                     <span className="timeline-text">React</span>
+                     <span className="timeline-text">Javascript</span>
+                     <span className="timeline-text">Next.js</span>
                   </div>
                </li>
 
@@ -112,15 +165,15 @@ const Experience = () => {
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
-                     <span className="timeline-text">Javascript,</span>
-                     <span className="timeline-text">Next.js,</span>
-                     <span className="timeline-text">Typescript,</span>
-                     <span className="timeline-text">Zod,</span>
-                     <span className="timeline-text">Framer Motion,</span>
-                     <span className="timeline-text">TailwindCSS,</span>
-                     <span className="timeline-text">Nodemailer,</span>
-                     <span className="timeline-text">Firebase,</span>
-                     <span className="timeline-text">Zustand,</span>
+                     <span className="timeline-text">Javascript</span>
+                     <span className="timeline-text">Next.js</span>
+                     <span className="timeline-text">Typescript</span>
+                     <span className="timeline-text">Zod</span>
+                     <span className="timeline-text">Framer Motion</span>
+                     <span className="timeline-text">TailwindCSS</span>
+                     <span className="timeline-text">Nodemailer</span>
+                     <span className="timeline-text">Firebase</span>
+                     <span className="timeline-text">Zustand</span>
                   </div>
                </li>
 
@@ -172,15 +225,15 @@ const Experience = () => {
                   </p>
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
-                     <span className="timeline-text">React,</span>
-                     <span className="timeline-text">Next.js,</span>
-                     <span className="timeline-text">Javascript,</span>
-                     <span className="timeline-text">Redux Toolkit,</span>
-                     <span className="timeline-text">Express,</span>
-                     <span className="timeline-text">Paystack,</span>
-                     <span className="timeline-text">TailwindCSS,</span>
-                     <span className="timeline-text">HTML/CSS.</span>
-                     <span className="timeline-text">mongoDB,</span>
+                     <span className="timeline-text">React</span>
+                     <span className="timeline-text">Next.js</span>
+                     <span className="timeline-text">Javascript</span>
+                     <span className="timeline-text">Redux Toolkit</span>
+                     <span className="timeline-text">Express</span>
+                     <span className="timeline-text">Paystack</span>
+                     <span className="timeline-text">TailwindCSS</span>
+                     <span className="timeline-text">HTML/CSS</span>
+                     <span className="timeline-text">mongoDB</span>
                      <span className="timeline-text">Nodemailer</span>
                   </div>
                </li>
@@ -221,16 +274,16 @@ const Experience = () => {
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
-                     <span className="timeline-text">React,</span>
-                     <span className="timeline-text">Next.js,</span>
-                     <span className="timeline-text">Javascript,</span>
-                     <span className="timeline-text">Antd,</span>
-                     <span className="timeline-text">React-Context,</span>
-                     <span className="timeline-text">MetaMask,</span>
-                     <span className="timeline-text">HTML/CSS.</span>
-                     <span className="timeline-text">Solidity,</span>
-                     <span className="timeline-text">Ethers.js,</span>
-                     <span className="timeline-text">Hardhat,</span>
+                     <span className="timeline-text">React</span>
+                     <span className="timeline-text">Next.js</span>
+                     <span className="timeline-text">Javascript</span>
+                     <span className="timeline-text">Antd</span>
+                     <span className="timeline-text">React-Context</span>
+                     <span className="timeline-text">MetaMask</span>
+                     <span className="timeline-text">HTML/CSS</span>
+                     <span className="timeline-text">Solidity</span>
+                     <span className="timeline-text">Ethers.js</span>
+                     <span className="timeline-text">Hardhat</span>
                   </div>
                </li>
 
@@ -263,15 +316,15 @@ const Experience = () => {
 
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
-                     <span className="timeline-text">React,</span>
-                     <span className="timeline-text">React-Context,</span>
-                     <span className="timeline-text">Javascript,</span>
-                     <span className="timeline-text">MetaMask,</span>
-                     <span className="timeline-text">TailwindCSS,</span>
-                     <span className="timeline-text">HTML.</span>
-                     <span className="timeline-text">Solidity,</span>
-                     <span className="timeline-text">Ethers.js,</span>
-                     <span className="timeline-text">Mocha,</span>
+                     <span className="timeline-text">React</span>
+                     <span className="timeline-text">React-Context</span>
+                     <span className="timeline-text">Javascript</span>
+                     <span className="timeline-text">MetaMask</span>
+                     <span className="timeline-text">TailwindCSS</span>
+                     <span className="timeline-text">HTML</span>
+                     <span className="timeline-text">Solidity</span>
+                     <span className="timeline-text">Ethers.js</span>
+                     <span className="timeline-text">Mocha</span>
                   </div>
                </li>
 
@@ -299,9 +352,9 @@ const Experience = () => {
                   {/* <p className="timeline-text">Integration.</p> */}
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
-                     <span className="timeline-text">React,</span>
-                     <span className="timeline-text">Javascript,</span>
-                     <span className="timeline-text">HTML/CSS,</span>
+                     <span className="timeline-text">React</span>
+                     <span className="timeline-text">Javascript</span>
+                     <span className="timeline-text">HTML/CSS</span>
                      <span className="timeline-text">React/Icons</span>
                   </div>
                </li>

@@ -30,7 +30,7 @@ export const ThemeProvider = ({ children }) => {
       document.body.classList.add('light-theme');
       document.body.classList.remove('dark-theme');
     }
-    
+
     // Save theme to localStorage
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   }, [isDark]);
