@@ -7,6 +7,7 @@ import clt4 from '../../public/images/monie.png';
 import clt5 from '../../public/images/shibase.png';
 import clt6 from '../../public/images/wogaaLogo.png';
 import clt7 from '../../public/images/paycrest.png';
+import clt8 from '../../public/images/noblocks-logo.png';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,6 +26,16 @@ const Clients = () => {
             </h3>
 
             <ul className="clients-list has-scrollbar">
+               <li className="clients-item">
+                  <a href="https://noblocks.xyz/" target="_blank">
+                     <Image
+                        src={clt8}
+                        alt="client logo"
+                        width={100}
+                        height={100}
+                     />
+                  </a>
+               </li>
                <li className="clients-item">
                   <a href="https://www.paycrest.io" target="_blank">
                      <Image

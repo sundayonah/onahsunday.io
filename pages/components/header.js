@@ -102,7 +102,7 @@ const Header = () => {
                      <h1 className="name" title="Onah Sunday">
                         Onah Sunday
                      </h1>
-                     <p className="title">Full Stack | Web3 Int.</p>
+                     <p className="title">Full Stack Software Engineer</p>
                   </div>
                   <button
                      className="info_more-btn"
@@ -219,14 +219,16 @@ const Header = () => {
                   <div className="separator" />
                   <section className="about-text">
                      <p>
-                        As a Full stack software Engineer, I possess a great love
-                        for coding and have gained more than a two years of
-                        experience. I have fully immersed myself in web
-                        development and web3, and I am continuously seeking new
-                        opportunities to learn and improve. I aim to join a
-                        reputable IT company where I can work on various
-                        challenging projects utilizing the most recent
-                        technologies.
+                        As a Full Stack Software Engineer, I bring a deep passion for
+                        crafting elegant, scalable solutions across the web development
+                        and Web3 ecosystems. My expertise spans modern frontend frameworks,
+                        backend architecture, blockchain integration, and decentralized
+                        application development. I am comfortable leveraging AI-powered
+                        tools for code review and optimization, ensuring robust,
+                        maintainable codebases. Continuously driven by innovation and
+                        excellence, I seek opportunities with forward-thinking organizations
+                        where I can contribute to impactful projects utilizing cutting-edge
+                        technologies and architectural best practices.
                      </p>
                   </section>
 
