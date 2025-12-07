@@ -60,7 +60,7 @@ const Portfolio = () => {
                      </a>
                      <ul className="project-stacks">
                         {p.project_data.stacks.map((stack, index) => (
-                           <li key={index}>{stack}</li>
+                           <li key={`${p.id}-${stack}-${index}`}>{stack}</li>
                         ))}
                      </ul>
                   </li>

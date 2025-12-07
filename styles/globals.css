@@ -928,6 +928,46 @@ main {
    visibility: visible;
 }
 
+/* Flip container - base styles */
+.sidebar-flip-container {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.sidebar-flip-front,
+.sidebar-flip-back {
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   -webkit-backface-visibility: hidden;
+}
+
+.sidebar-flip-back {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   text-align: center;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s, visibility 0.3s;
+}
+
+.motivational-text {
+   color: var(--white-2);
+   font-size: var(--fs-6);
+   line-height: 1.6;
+   font-weight: var(--fw-400);
+}
+
+.motivational-text p {
+   margin: 0;
+}
+
 .contacts-list {
    display: grid;
    grid-template-columns: 1fr;
@@ -2695,6 +2735,33 @@ textarea.form-input::-webkit-resizer {
       margin-bottom: 0;
       padding-top: 60px;
       z-index: 1;
+   }
+
+   /* Flip container - desktop only */
+   .sidebar-flip-container {
+      perspective: 1000px;
+      min-height: 200px;
+   }
+
+   .sidebar-flip-front,
+   .sidebar-flip-back {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+   }
+
+   .sidebar-flip-back {
+      transform: rotateY(180deg);
+      opacity: 1;
+      visibility: visible;
+   }
+
+   /* Flip animation on hover - desktop only */
+   .sidebar:hover .sidebar-flip-front {
+      transform: rotateY(-180deg);
+   }
+
+   .sidebar:hover .sidebar-flip-back {
+      transform: rotateY(0deg);
    }
 
    .sidebar-info {

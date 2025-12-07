@@ -26,49 +26,12 @@ const Contact = dynamic(() => import('./contact'), { ssr: false });
 const Research = dynamic(() => import('./research'), { ssr: false });
 const BackToTopButton = dynamic(() => import('./backToTopButton'), { ssr: false });
 const Header = () => {
-   const serviceItemsRef = useRef([]);
    const [active, setActive] = useState(false);
-   const [darkTheme, setDarkTheme] = useState(false);
-   const [visible, setVisible] = useState(false);
+
 
    function handleClick() {
       setActive(!active);
    }
-
-   // const handleToggleTheme = () => {
-   //   setDarkTheme((prevTheme) => !prevTheme);
-   // };
-
-   const showModal = () => {
-      setVisible(true);
-   };
-   var peace = '🙋';
-
-
-
-
-   // useEffect(() => {
-   //    const observer = new IntersectionObserver(
-   //       (entries) => {
-   //          entries.forEach((entry) => {
-   //             if (entry.isIntersecting) {
-   //                entry.target.classList.add('visible');
-   //             }
-   //          });
-   //       },
-   //       { threshold: 0.5 }
-   //    );
-
-   //    serviceItemsRef.current.forEach((item) => {
-   //       if (item) observer.observe(item);
-   //    });
-
-   //    return () => {
-   //       serviceItemsRef.current.forEach((item) => {
-   //          if (item) observer.unobserve(item);
-   //       });
-   //    };
-   // }, []);
 
    useEffect(() => {
       AOS.init({ duration: 800 });
@@ -76,85 +39,83 @@ const Header = () => {
 
    return (
       <div className="eneyi">
-         {/* <Modal
-            open={visible}
-            footer={null}
-            onCancel={() => setVisible(false)}
-            title="Notice"
-         >
-            <div className="modalContent">
-               <p>Theme toggle is now available! Click the toggle button in the navbar to switch between dark and light themes {peace}.</p>
-            </div>
-         </Modal> */}
          <main>
             {/* - #SIDEBAR */}
             <aside className={`sidebar ${active ? 'active' : ''}`}>
-               <div className="sidebar-info">
-                  <figure className="avatar-box">
-                     <Image
-                        src={Img1}
-                        alt="Onah Sunday"
-                        width={85}
-                        hieght={85}
-                     />
-                  </figure>
-                  <div className="info-content">
-                     <h1 className="name" title="Onah Sunday">
-                        Onah Sunday
-                     </h1>
-                     <p className="title">Full Stack Software Engineer</p>
+               <div className="sidebar-flip-container">
+                  <div className="sidebar-flip-front">
+                     <div className="sidebar-info">
+                        <figure className="avatar-box">
+                           <Image
+                              src={Img1}
+                              alt="Onah Sunday"
+                              width={85}
+                              hieght={85}
+                           />
+                        </figure>
+                        <div className="info-content">
+                           <h1 className="name" title="Onah Sunday">
+                              Onah Sunday
+                           </h1>
+                           <p className="title">Full Stack Software Engineer</p>
+                        </div>
+                        <button
+                           className="info_more-btn"
+                           onClick={() => handleClick()}
+                        >
+                           <span>Show Contacts</span>
+                           <ion-icon name="chevron-down" />
+                        </button>
+                     </div>
+                     <div className="sidebar-info_more">
+                        <div className="separator" />
+                        <ul className="social-list">
+                           <li className="social-item">
+                              <a
+                                 href="https://github.com/sundayonah"
+                                 className="social-link"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                              >
+                                 <ion-icon name="logo-github" />
+                              </a>
+                           </li>
+                           <li className="social-item">
+                              <a
+                                 href="https://twitter.com/xhunkleph"
+                                 className="social-link"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                              >
+                                 <ion-icon name="logo-twitter" />
+                              </a>
+                           </li>
+                           <li className="social-item">
+                              <a
+                                 href="https://www.linkedin.com/in/onah-sunday-0b783921a/"
+                                 className="social-link"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                              >
+                                 <ion-icon name="logo-linkedin" />
+                              </a>
+                           </li>
+                           <li className="social-item">
+                              <a
+                                 href="mailto:sundayonah94@gmail.com"
+                                 className="social-link"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                              ></a>
+                           </li>
+                        </ul>
+                     </div>
                   </div>
-                  <button
-                     className="info_more-btn"
-                     onClick={() => handleClick()}
-                  >
-                     <span>Show Contacts</span>
-                     <ion-icon name="chevron-down" />
-                  </button>
-               </div>
-               <div className="sidebar-info_more">
-                  <div className="separator" />
-                  <div className="separator" />
-                  <ul className="social-list">
-                     <li className="social-item">
-                        <a
-                           href="https://github.com/sundayonah"
-                           className="social-link"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           <ion-icon name="logo-github" />
-                        </a>
-                     </li>
-                     <li className="social-item">
-                        <a
-                           href="https://twitter.com/xhunkleph"
-                           className="social-link"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           <ion-icon name="logo-twitter" />
-                        </a>
-                     </li>
-                     <li className="social-item">
-                        <a
-                           href="https://www.linkedin.com/in/onah-sunday-0b783921a/"
-                           className="social-link"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           <ion-icon name="logo-linkedin" />
-                        </a>
-                     </li>
-                     <li className="social-item">
-                        <a
-                           href="mailto:sundayonah94@gmail.com"
-                           className="social-link"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        ></a>
-                     </li>
-                  </ul>
+                  <div className="sidebar-flip-back">
+                     <div className="motivational-text">
+                        <p>I'm not just writing code—I'm creating solutions, enabling experiences, and building the future, one commit at a time. I keep building. I keep learning. I keep growing.</p>
+                     </div>
+                  </div>
                </div>
             </aside>
 
