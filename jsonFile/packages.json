@@ -32,6 +32,24 @@
             },
             "created_at": "0001-01-01T00:00:00Z",
             "updated_at": "0001-01-01T00:00:00Z"
+        },
+        {
+            "id": 3,
+            "package_data": {
+                "name": "supportkit-sdk",
+                "link": "https://www.npmjs.com/package/supportkit-sdk",
+                "description": "Developer-first customer support chat SDK — add beautiful, real-time chat widgets to your website in minutes. Built as a framework-agnostic web component on Lit, with Pusher-powered real-time messaging.",
+                "stacks": [
+                    "TypeScript",
+                    "Lit",
+                    "Web Components",
+                    "Pusher",
+                    "Vite",
+                    "SDK"
+                ]
+            },
+            "created_at": "0001-01-01T00:00:00Z",
+            "updated_at": "0001-01-01T00:00:00Z"
         }
     ]
 }

@@ -472,6 +472,10 @@ body.light-theme .info-content .title {
    color: hsl(0, 0%, 25%);
 }
 
+body.light-theme .motivational-text {
+   color: hsl(0, 0%, 20%);
+}
+
 body.light-theme .contact-title {
    color: hsl(0, 0%, 15%);
 }
@@ -948,8 +952,10 @@ main {
    top: 0;
    left: 0;
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
+   gap: 20px;
    padding: 20px;
    text-align: center;
    opacity: 0;
@@ -1493,6 +1499,34 @@ main {
    font-size: var(--fs-6);
    line-height: 0.8;
    margin-bottom: 10px;
+}
+
+.timeline-item-header {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 4px;
+}
+
+.timeline-item-header .timeline-item-title {
+   margin-bottom: 0;
+}
+
+.timeline-logo {
+   flex-shrink: 0;
+   border-radius: 6px;
+   overflow: hidden;
+   line-height: 0;
+}
+
+.timeline-item-link {
+   color: inherit;
+   text-decoration: none;
+   transition: color 0.2s;
+}
+
+.timeline-item-link:hover {
+   color: var(--vegas-gold);
 }
 
 .timeline-list span {
@@ -2095,7 +2129,10 @@ textarea.form-input::-webkit-resizer {
    * #PORTFOLIO, BLOG 
    */
 
-   .project-img,
+   .project-img {
+      height: 220px;
+   }
+
    .blog-banner-box {
       height: auto;
    }

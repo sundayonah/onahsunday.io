@@ -8,6 +8,7 @@ import clt5 from '../../public/images/shibase.png';
 import clt6 from '../../public/images/wogaaLogo.png';
 import clt7 from '../../public/images/paycrest.png';
 import clt8 from '../../public/images/noblocks-logo.png';
+import clt9 from '../../public/images/cryptobilz.svg';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,6 +27,16 @@ const Clients = () => {
             </h3>
 
             <ul className="clients-list has-scrollbar">
+               <li className="clients-item">
+                  <a href="https://www.cryptobilz.xyz/" target="_blank">
+                     <Image
+                        src={clt9}
+                        alt="Cryptobilz"
+                        width={100}
+                        height={100}
+                     />
+                  </a>
+               </li>
                <li className="clients-item">
                   <a href="https://noblocks.xyz/" target="_blank">
                      <Image
@@ -77,7 +88,7 @@ const Clients = () => {
                   </a>
                </li>
                <li className="clients-item">
-                  <a href="https://onahprosperity.github.io/" target="_blank">
+                  <a href="https://onahprosper.github.io/" target="_blank">
                      <Image
                         src={Img1}
                         alt="client logo"

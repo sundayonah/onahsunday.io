@@ -1,5 +1,25 @@
 {
    "projects": [
+      {
+         "id": 9,
+         "project_data": {
+            "name": "Cryptobilz",
+            "image_url": "/images/cryptobilz.png",
+            "link": "https://www.cryptobilz.xyz/",
+            "description": "Pay Nigerian utilities with stablecoins — electricity, airtime, data, cable TV and more using USDC/USDT on Base, Polygon, and Arbitrum.",
+            "stacks": [
+               "Next.js 14",
+               "TypeScript",
+               "PostgreSQL",
+               "Prisma",
+               "Privy",
+               "viem",
+               "Tailwind CSS",
+               "Paycrest",
+               "Alchemy"
+            ]
+         }
+      },
        {
          "id": 1,
          "project_data": {

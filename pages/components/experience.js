@@ -28,7 +28,14 @@ const Experience = () => {
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
-                     Full Stack Software Engineer @Paycrest, Inc
+                     <a
+                        href="https://www.paycrest.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        Full Stack Software Engineer @Paycrest, Inc
+                     </a>
                   </h4>
                   <span>November 2024 — Present</span>
                   <p className="timeline-text">
@@ -81,7 +88,14 @@ const Experience = () => {
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
-                     Full Stack Software Engineer @Noblocks (Paycrest, Inc)
+                     <a
+                        href="https://noblocks.xyz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        Full Stack Software Engineer @Noblocks (Paycrest, Inc)
+                     </a>
                   </h4>
                   <span>November 2024 — Present</span>
                   <p className="timeline-text">
@@ -114,9 +128,59 @@ const Experience = () => {
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
-                     Web3 Engineer @GOWFO
+                     <a
+                        href="https://www.cryptobilz.xyz/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        Full Stack Engineer @Cryptobilz
+                     </a>
                   </h4>
-                  <span>February 2024 — Present</span>
+                  <span>December 2025 — Present</span>
+                  <p className="timeline-text">
+                     Cryptobilz is a Nigerian fintech web app with two core capabilities: pay everyday utility bills using stablecoins, and deposit Nigerian Naira to receive stablecoins directly into your wallet.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Engineered a sponsored transaction flow (EIP-7702) that abstracts gas costs entirely from end users, improving payment UX.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Built a fiat on-ramp (NGN → stablecoin) powered by Paycrest's Sender API, enabling seamless crypto acquisition within the app.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Designed a webhook-driven status pipeline that keeps transaction records in sync across the PayBeta settlement lifecycle.
+                  </p>
+                  <p className="timeline-text paragraph-dot">
+                     Integrated Privy for embedded and external wallet authentication across Base, Polygon, and Arbitrum.
+                  </p>
+
+                  <h4 className="h4 timeline-item-title">Skills</h4>
+                  <div className="techStack">
+                     <span className="timeline-text">Next.js 14</span>
+                     <span className="timeline-text">TypeScript</span>
+                     <span className="timeline-text">PostgreSQL</span>
+                     <span className="timeline-text">Prisma</span>
+                     <span className="timeline-text">Privy</span>
+                     <span className="timeline-text">viem</span>
+                     <span className="timeline-text">Tailwind CSS</span>
+                     <span className="timeline-text">PayBeta</span>
+                     <span className="timeline-text">Paycrest</span>
+                     <span className="timeline-text">Alchemy</span>
+                  </div>
+               </li>
+
+               <li className="timeline-item" data-aos="fade-up">
+                  <h4 className="h4 timeline-item-title">
+                     <a
+                        href="https://www.autheo.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        Web3 Engineer @GOWFO
+                     </a>
+                  </h4>
+                  <span>February 2024 — November 2025</span>
                   <p className="timeline-text">
                      WFO is an extreme sports network on a mission to help fans,
                      creators, and athletes of extreme sports collaborate, widen
@@ -143,7 +207,14 @@ const Experience = () => {
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
-                     Full Stack Developer @wogaa
+                     <a
+                        href="https://www.wogaa.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        Full Stack Developer @wogaa
+                     </a>
                   </h4>
                   <span>July 2024 — September 2024</span>
                   <p className="timeline-text">
@@ -240,7 +311,14 @@ const Experience = () => {
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
-                     Front-end & Web3 Integration @The KingdonCoin LaunchPad
+                     <a
+                        href="https://kingdom-coin.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        Front-end & Web3 Integration @The KingdonCoin LaunchPad
+                     </a>
                   </h4>
                   <span>March 2023 — May 2023</span>
                   <p className="timeline-text paragraph-dot">
@@ -289,7 +367,14 @@ const Experience = () => {
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
-                     front-end & wen3 integration @BIDA Token Migration
+                     <a
+                        href="https://bidauction-token-v2migration.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        front-end & wen3 integration @BIDA Token Migration
+                     </a>
                   </h4>
                   <span>Feb 2023 — March 2023</span>
                   <p className="timeline-text paragraph-dot">
@@ -330,7 +415,14 @@ const Experience = () => {
 
                <li className="timeline-item" data-aos="fade-up">
                   <h4 className="h4 timeline-item-title">
-                     full stack developer @Smart Contract Engineer Portfolio
+                     <a
+                        href="https://onahprosper.github.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="timeline-item-link"
+                     >
+                        full stack developer @Smart Contract Engineer Portfolio
+                     </a>
                   </h4>
                   <p className="timeline-text paragraph-dot">
                      Designed and developed the entire project, handling both

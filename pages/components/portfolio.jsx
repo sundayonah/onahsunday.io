@@ -44,11 +44,10 @@ const Portfolio = () => {
                               <ion-icon name="eye-outline" />
                            </div>
                            <Image
-                              // src={p.project_data.image_url}
                               src={getImagePath(p.project_data.image_url)}
                               alt={p.project_data.name}
-                              width={1000}
-                              height={150}
+                              width={600}
+                              height={400}
                               className=""
                               loading="lazy"
                            />
