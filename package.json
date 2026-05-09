@@ -6,7 +6,7 @@
    "scripts": {
       "dev": "next dev",
       "build": "next build",
-      "build:github": "cross-env GITHUB_PAGES=true npm run build",
+      "build:github": "cross-env GITHUB_PAGES=true next build && cross-env GITHUB_PAGES=true next export",
       "start": "next start",
       "lint": "next lint",
       "export": "next export",
