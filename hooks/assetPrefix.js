@@ -1,16 +1,16 @@
-const isProd = process.env.NODE_ENV === 'production';
-
+/**
+ * Prefix for static assets under `/public` when the site is hosted on a subpath
+ * (GitHub Pages). Set at build time via `next.config.js` → `NEXT_PUBLIC_BASE_PATH`.
+ * Vercel / root hosting: leave empty so paths stay `/images/...`, `/_next/...`.
+ */
 export const getImagePath = (path) => {
-    // If path is already a full URL (http/https), return as is
-    if (path?.startsWith('http')) {
-        return path;
-    }
+   if (path?.startsWith('http')) {
+      return path;
+   }
 
-    // For local images, add basePath in production
-    const basePath = isProd ? '/onahsunday.io' : '';
+   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-    // Ensure path starts with /
-    const normalizedPath = path?.startsWith('/') ? path : `/${path}`;
+   const normalizedPath = path?.startsWith('/') ? path : `/${path}`;
 
-    return `${basePath}${normalizedPath}`;
+   return `${basePath}${normalizedPath}`;
 };

@@ -16,11 +16,6 @@ const baseConfig = {
     domains: ['github.com'],
     unoptimized: true, // Required for static export
   },
-  // Reduce the number of static pages generated concurrently
-  experimental: {
-    workerThreads: false,
-    cpus: 1
-  },
   trailingSlash: true, // Helps with GitHub Pages routing
   webpack: (config) => {
     return config
@@ -39,6 +34,12 @@ const ghPagesConfig =
 const nextConfig = {
   ...baseConfig,
   ...ghPagesConfig,
+  /** Inlined into client bundle — must not force `/onahsunday.io` on Vercel. */
+  env: {
+    NEXT_PUBLIC_BASE_PATH:
+      process.env.NEXT_PUBLIC_BASE_PATH ||
+      (process.env.GITHUB_PAGES === 'true' ? '/onahsunday.io' : ''),
+  },
 }
 
 module.exports = nextConfig
