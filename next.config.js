@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
 
+/**
+ * Static export + asset prefix are only for GitHub Pages (`npm run build:github`).
+ * Vercel sets VERCEL=1 during build — omit export/basePath so the app is served from /
+ * and avoids static-export edge cases with nested files under `pages/`.
+ */
+const useGhPagesExport = process.env.GITHUB_PAGES === 'true'
+
 // Base config that applies to both dev and production
 const baseConfig = {
   reactStrictMode: true,
@@ -15,24 +22,23 @@ const baseConfig = {
     cpus: 1
   },
   trailingSlash: true, // Helps with GitHub Pages routing
-  // Optional: Enable webpack optimization
-  webpack: (config, { dev, isServer }) => {
-    // Add any webpack optimizations here if needed
+  webpack: (config) => {
     return config
   },
 }
 
-// Production-only config (for GitHub Pages)
-const prodConfig = isProd ? {
-  output: 'export', // Enable static export for GitHub Pages
-  basePath: '/onahsunday.io', // Your GitHub repo name
-  assetPrefix: '/onahsunday.io/', // Ensure assets load correctly
-} : {}
+const ghPagesConfig =
+  isProd && useGhPagesExport
+    ? {
+        output: 'export',
+        basePath: '/onahsunday.io',
+        assetPrefix: '/onahsunday.io/',
+      }
+    : {}
 
-// Merge configs
 const nextConfig = {
   ...baseConfig,
-  ...prodConfig,
+  ...ghPagesConfig,
 }
 
 module.exports = nextConfig
