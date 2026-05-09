@@ -1,5 +1,4 @@
 import React from 'react';
-import 'tailwindcss/tailwind.css';
 
 // Skeleton loader for NpmPackages
 export const NpmPackagesSkeleton = () => {

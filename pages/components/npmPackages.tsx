@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import 'tailwindcss/tailwind.css';
 // import { usePackages } from '../../hooks/usePackages';
 // import { PackageItem } from '../../types/types';
 // import { NpmPackagesSkeleton } from "../../loading/loading"
