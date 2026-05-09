@@ -22,8 +22,8 @@ const NpmPackages = () => {
    // if (error) return <div className="text-red-500 text-center py-8">Error: {error}</div>;
 
    return (
-      <section className="py-8" data-aos="fade-up">
-         <h2 className="h2 article-title mt-3" title="Portfolio">
+      <section className="py-8" id="packages" data-aos="fade-up">
+         <h2 className="h2 article-title mt-3" title="Npm Packages">
             Npm Packages
          </h2>
          <div

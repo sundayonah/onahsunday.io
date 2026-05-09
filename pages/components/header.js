@@ -129,15 +129,15 @@ const Header = () => {
                      </li>
                      <li className="navbar-item">
                         <button data-nav-link>
-                           <a className="navbar-link" href="#education">
-                              Education
+                           <a className="navbar-link" href="#portfolio">
+                              Portfolio
                            </a>
                         </button>
                      </li>
                      <li className="navbar-item">
                         <button data-nav-link>
-                           <a className="navbar-link" href="#portfolio">
-                              Portfolio
+                           <a className="navbar-link" href="#packages">
+                              Packages
                            </a>
                         </button>
                      </li>
