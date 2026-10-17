@@ -1,0 +1,32 @@
+{
+   "pythonRoadmap": {
+      "label": "Python roadmap",
+      "href": "https://roadmap.sh/python"
+   },
+   "topics": [
+      { "label": "Variables", "completed": true },
+      { "label": "Data types", "completed": true },
+      { "label": "Operators", "completed": true },
+      { "label": "Loops", "completed": true },
+      { "label": "Functions", "completed": true },
+      { "label": "Control flow", "completed": false },
+      { "label": "Lists & tuples", "completed": false },
+      { "label": "Dictionaries & sets", "completed": false },
+      { "label": "Error handling", "completed": false },
+      { "label": "File I/O", "completed": false },
+      { "label": "Modules & packages", "completed": false },
+      { "label": "OOP basics", "completed": false },
+      { "label": "Comprehensions", "completed": false },
+      { "label": "Testing basics", "completed": false }
+   ],
+   "resources": [
+      {
+         "label": "Official Python tutorial",
+         "href": "https://docs.python.org/3/tutorial/"
+      },
+      {
+         "label": "Python for Beginners with Hands-On Projects (freeCodeCamp)",
+         "href": "https://www.youtube.com/watch?v=oDOw5tB3Udw"
+      }
+   ]
+}
