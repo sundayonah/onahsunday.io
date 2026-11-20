@@ -75,14 +75,30 @@ const Experience = () => {
                   <h4 className="h4 timeline-item-title">Skills </h4>
                   <div className="techStack">
                      <span className="timeline-text">Go</span>
+                     <span className="timeline-text">Python</span>
                      <span className="timeline-text">TypeScript</span>
-                     <span className="timeline-text">Ent</span>
-                     <span className="timeline-text">Docker</span>
-                     <span className="timeline-text">Gin</span>
+                     <span className="timeline-text">React</span>
+                     <span className="timeline-text">Next.js</span>
+                     <span className="timeline-text">Remix</span>
+                     <span className="timeline-text">Node.js</span>
                      <span className="timeline-text">PostgreSQL</span>
+                     <span className="timeline-text">SQL</span>
                      <span className="timeline-text">Redis</span>
+                     <span className="timeline-text">Docker</span>
+                     <span className="timeline-text">CI/CD</span>
+                     <span className="timeline-text">REST APIs</span>
+                     <span className="timeline-text">Ethereum</span>
+                     <span className="timeline-text">Privy</span>
+                     <span className="timeline-text">Tailwind</span>
+                     <span className="timeline-text">TanStack</span>
+                     <span className="timeline-text">Mixpanel</span>
+                     <span className="timeline-text">Activepieces</span>
+                     <span className="timeline-text">Brevo</span>
+                     <span className="timeline-text">Datadog</span>
+                     <span className="timeline-text">GlitchTip</span>
+                     <span className="timeline-text">Jira</span>
                      <span className="timeline-text">Supabase</span>
-                     <span className="timeline-text">REST API</span>
+                     <span className="timeline-text">MCP (Model Context Protocol)</span>
                   </div>
                </li>
 
